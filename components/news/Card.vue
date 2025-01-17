@@ -24,6 +24,7 @@ withDefaults(defineProps<Props>(), {
 })
 
 const localePath = useLocalePath();
+const config = useRuntimeConfig()
 </script>
 
 <template>
@@ -34,7 +35,7 @@ const localePath = useLocalePath();
       <img
         class="lg:h-48 md:h-36 w-full object-cover object-center rounded-t-2xl shadow-lg group-hover:scale-[1.02] transition-all duration-500"
         width="300"
-        :src="image"
+        :src="config.public.baseURL + image || ''"
         :alt="alt"
       />
       <div class="px-3 pb-4">

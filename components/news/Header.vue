@@ -16,6 +16,9 @@ withDefaults(defineProps<Props>(), {
   description: 'No description',
   tags: () => [],
 })
+
+const config = useRuntimeConfig()
+
 </script>
 
 <template>
@@ -24,7 +27,7 @@ withDefaults(defineProps<Props>(), {
       {{ title || '' }}
     </h1>
     <img
-      :src="image || ''"
+      :src="config.public.baseURL + image || ''"
       :alt="alt || ''"
       width="600"
       class="m-auto rounded-2xl shadow-lg h-32 md:h-72 w-4/6 md:w-4/5 content-center object-cover"

@@ -88,7 +88,7 @@ export default defineNuxtConfig({
   robots: { robotsTxt: false },
 
   i18n: {
-    baseUrl: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
+    baseUrl: 'https://thorge.github.io/',
     customRoutes: 'config',
     pages: {
       'news/index': {
@@ -168,6 +168,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      baseURL: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
     }
   },
 
