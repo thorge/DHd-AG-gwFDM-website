@@ -87,6 +87,10 @@ export default defineNuxtConfig({
 
   robots: { robotsTxt: false },
 
+  image: {
+    provider: "ipx",
+  },
+
   i18n: {
     baseUrl: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
     customRoutes: 'config',
