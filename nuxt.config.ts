@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   // },
 
   app: {
-    baseURL: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
+    baseURL: '/DHd-AG-gwFDM-website/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
