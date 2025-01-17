@@ -2,7 +2,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   hooks: {},
 
   // alias: {
