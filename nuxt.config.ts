@@ -86,7 +86,7 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
 
   i18n: {
-    baseUrl: 'https://thorge.github.io',
+    baseUrl: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
     customRoutes: 'config',
     pages: {
       'news/index': {
