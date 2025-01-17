@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.13.4",
+    "@tabler/icons-vue": "^3.14.0",
+    "apexcharts": "^4.1.0",
+    "axios": "^1.7.7",
+    "nuxt-webfontloader": "^1.1.0",
+    "sass": "^1.81.0",
+    "uuid": "^11.0.3",
+    "vue3-apexcharts": "^1.8.0"
+  },
+  "devDependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@nuxt/image": "^1.8.0",
+    "@nuxt/vite-builder": "^3.15.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^9.1.0",
+    "@nuxtjs/seo": "^2.0.0-rc.23",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@parcel/watcher": "^2.5.0",
+    "@pinia/nuxt": "^0.7.0",
+    "@stefanobartoletti/nuxt-social-share": "^0.6.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "minify-css-string": "^1.0.0",
+    "nuxt": "^3.15.2",
+    "nuxt-icon": "^0.6.8",
+    "nuxt-og-image": "^3.0.0-rc.38",
+    "vite-plugin-vuetify": "^2.0.4",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
+    "vuetify": "^3.7.4"
+  }
+}
