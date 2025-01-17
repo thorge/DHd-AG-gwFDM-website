@@ -2,7 +2,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   hooks: {},
 
   // alias: {
@@ -86,10 +86,6 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
 
   robots: { robotsTxt: false },
-
-  image: {
-    provider: "ipx",
-  },
 
   i18n: {
     baseUrl: 'https://thorge.github.io/DHd-AG-gwFDM-website/',
