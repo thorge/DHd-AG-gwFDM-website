@@ -8,35 +8,34 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.1.0",
-    "@tabler/icons-vue": "^3.14.0",
-    "apexcharts": "^4.1.0",
-    "axios": "^1.7.7",
-    "nuxt-webfontloader": "^1.1.0",
-    "sass": "^1.81.0",
-    "uuid": "^11.0.3",
-    "vue3-apexcharts": "^1.8.0"
-  },
-  "devDependencies": {
     "@formkit/auto-animate": "^0.8.2",
+    "@nuxt/content": "^3.1.0",
     "@nuxt/image": "^1.8.0",
     "@nuxt/vite-builder": "^3.15.4",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/i18n": "^9.1.4",
     "@nuxtjs/seo": "^2.1.1",
-    "@nuxtjs/tailwindcss": "^6.11.4",
     "@parcel/watcher": "^2.5.0",
     "@pinia/nuxt": "^0.7.0",
-    "@stefanobartoletti/nuxt-social-share": "^0.6.1",
+    "@tabler/icons-vue": "^3.14.0",
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/vite": "^4.0.5",
+    "apexcharts": "^4.1.0",
+    "axios": "^1.7.7",
+    "daisyui": "^5.0.0-beta.7",
     "minify-css-string": "^1.0.0",
     "nuxt": "^3.15.4",
     "nuxt-icon": "^0.6.8",
     "nuxt-og-image": "^3.0.0-rc.38",
-    "vite-plugin-vuetify": "^2.0.4",
+    "nuxt-webfontloader": "^1.1.0",
+    "sass": "^1.81.0",
+    "tailwindcss": "^4.0.5",
+    "uuid": "^11.0.3",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5",
-    "vuetify": "^3.7.9"
+    "vue3-apexcharts": "^1.8.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
   }
 }

@@ -7,17 +7,16 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-vue";
 
 const route = useRoute();
 const { data: data } = await useAsyncData(route.path, () => {
-  return queryCollection("news").order('date', 'DESC').all();
+  return queryCollection("news").order("date", "DESC").all();
 });
 
 const elementPerPage = ref(5);
 const pageNumber = ref(1);
-const searchTest = ref("");
+const searchField = ref("");
 
 const formattedData = computed(() => {
   return (
     data.value?.map((articles) => {
-      console.log(articles);
       return {
         path: articles.path,
         title: articles.title || "no-title available",
@@ -37,7 +36,7 @@ const searchData = computed(() => {
   return (
     formattedData.value.filter((data) => {
       const lowerTitle = data.title.toLocaleLowerCase();
-      if (lowerTitle.search(searchTest.value) !== -1) return true;
+      if (lowerTitle.search(searchField.value.toLocaleLowerCase()) !== -1) return true;
       else return false;
     }) || []
   );
@@ -82,18 +81,39 @@ function onNextPageClick() {
 </script>
 
 <template>
-  <SharedHero :title="$t('newsPage.title')" :description="$t('newsPage.description')" />
+  <SharedHero
+    :title="$t('newsPage.title')"
+    :description="$t('newsPage.description')"
+  />
 
   <div class="md:px-6">
-    <input
-      v-model="searchTest"
-      :placeholder="$t('search')"
-      type="text"
-      class="block w-full bg-[#F1F2F4] dark:bg-slate-900 dark:placeholder-zinc-500 rounded-md border-gray-300 dark:border-gray-800 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-    />
+    <label class="input">
+      <svg
+        class="h-[1em] opacity-50"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <g
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2.5"
+          fill="none"
+          stroke="currentColor"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </g>
+      </svg>
+      <input
+        v-model="searchField"
+        type="search"
+        class="grow"
+        :placeholder="$t('search')"
+      />
+    </label>
   </div>
 
-  <div v-auto-animate class="space-y-5 my-5 md:px-4">
+  <div class="space-y-5 my-5 md:px-4">
     <template v-for="post in paginatedData" :key="post.title">
       <ArchiveCard
         :path="post.path"
@@ -119,14 +139,16 @@ function onNextPageClick() {
     <button :disabled="pageNumber <= 1" @click="onPreviousPageClick">
       <IconChevronLeft
         size="30"
-        :class="{ 'text-sky-700 dark:text-sky-400': pageNumber > 1 }"
+        :class="{ 'text-secondary dark:text-secondary': pageNumber > 1 }"
       />
     </button>
     <p>{{ pageNumber }} / {{ totalPage }}</p>
     <button :disabled="pageNumber >= totalPage" @click="onNextPageClick">
       <IconChevronRight
         size="30"
-        :class="{ 'text-sky-700 dark:text-sky-400': pageNumber < totalPage }"
+        :class="{
+          'text-secondary dark:text-secondary': pageNumber < totalPage,
+        }"
       />
     </button>
   </div>

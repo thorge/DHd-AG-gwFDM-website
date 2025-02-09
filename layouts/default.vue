@@ -1,31 +1,20 @@
 <template>
-  <v-locale-provider>
-    <v-app>
-      <LayoutFullMain />
-      <v-main>
-        <v-container fluid class="page-wrapper">
-          <div class="container max-w-5xl mx-auto">
-            <nav aria-label="Breadcrumbs" class="mb-4">
-              <v-breadcrumbs :items="breadcrumbItems">
-                <template v-slot:prepend>
-                  <IconHome2 size="16" />
-                </template>
-                <template v-slot:title="{ item }">
-                  <NuxtLink v-bind="item">
-                    {{ item.label }}
-                  </NuxtLink>
-                </template>
-              </v-breadcrumbs>
-            </nav>
-            <NuxtPage />
-          </div>
-        </v-container>
-      </v-main>
-      <v-footer absolute inset app>
-        <MainFooter />
-      </v-footer>
-    </v-app>
-  </v-locale-provider>
+  <MainNavbar />
+  <main class="p-6">
+    <div class="container max-w-5xl mx-auto">
+      <nav v-if="breadcrumbItems.length > 1" aria-label="Breadcrumbs">
+        <div class="breadcrumbs text-sm">
+          <ul>
+            <li v-for="item in breadcrumbItems" v-bind:key="item.label">
+              <NuxtLink v-bind="item">{{ item.label }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <NuxtPage />
+    </div>
+  </main>
+  <MainFooter />
 </template>
 <script setup lang="ts">
 import { IconHome2 } from "@tabler/icons-vue";

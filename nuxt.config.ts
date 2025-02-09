@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   ssr: true,
@@ -17,8 +17,13 @@ export default defineNuxtConfig({
       // link: [
       //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       // ],
+      htmlAttrs: {
+        "data-theme": 'light'
+      }
     }
   },
+
+  css: ["~/assets/app.css"],
 
   site: {
     name: 'DHd-AG gwFDM',
@@ -34,31 +39,14 @@ export default defineNuxtConfig({
     shim: false
   },
 
-  build: {
-    transpile: ["vuetify"],
-  },
-
   modules: [
-    (_options, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error
-        config.plugins.push(vuetify({
-          autoImport: true,
-          styles: {
-            configFile: 'scss/settings.scss',
-          },
-         }))
-      })
-    },
     // '@pinia/nuxt',
     '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss',
     '@formkit/auto-animate',
-
   ],
 
   content: {
@@ -153,11 +141,7 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
-    vue: {
-      template: {
-        transformAssetUrls,
-      },
-    },
+    plugins: [tailwindcss()],
   },
 
   nitro: {

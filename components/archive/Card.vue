@@ -43,7 +43,7 @@ const config = useRuntimeConfig()
       </div>
       <div class="sm:col-span-7 p-5">
         <h2
-          class="text-xl font-semibold pb-1 text-primary group-hover:text-sky-400 dark:group-hover:text-sky-400"
+          class="text-xl font-semibold pb-1 text-primary group-hover:text-secondary dark:group-hover:text-secondary"
         >
           {{ title }}
         </h2>
@@ -66,7 +66,7 @@ const config = useRuntimeConfig()
             </p>
           </div>
         </div>
-        <div class="flex group-hover:underline text-primary dark:text-sky-400 items-center pt-2">
+        <div class="flex group-hover:underline text-primary dark:text-secondary items-center pt-2">
           <p>{{ $t('read_more') }}</p>
           <LogoArrow />
         </div>

@@ -1,28 +1,66 @@
+<script setup>
+import sidebarItems from "~/components/main/sidebarItem";
+
+const localePath = useLocalePath();
+</script>
 <template>
-  <div class="py-5 border-t dark:border-gray-800 mt-12 dark:text-zinc-300">
-    <div class="px-6 container max-w-5xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <FooterSite />
-        <FooterLink />
-        <FooterConnect />
-      </div>
-
-      <div class="border-t dark:border-gray-800 mt-5 text-center p-2">
-        © {{ new Date().getFullYear() }} – AG gwFDM
-      </div>
+  <footer
+    class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mt-10"
+  >
+    <div class="max-w-100">
+      <h6 class="footer-title">{{ $t("footerAbout.title") }}</h6>
+      <p class="py-2 dark:text-zinc-300">
+        {{ $t("footerAbout.description") }}
+      </p>
+      © {{ new Date().getFullYear() }} – AG gwFDM
     </div>
-  </div>
+    <nav>
+      <h6 class="footer-title">Links</h6>
+      <NuxtLink
+        v-for="item in sidebarItems"
+        v-bind:key="item"
+        :to="localePath(item.to)"
+        >{{ $t(item.title) }}</NuxtLink
+      >
+
+      <NuxtLink
+        to="https://dhd-ag-datenzentren-dienstekatalog.github.io/"
+        class="link link-hover"
+        target="_blank"
+      >
+        {{ $t("serviceCatalogue") }}
+      </NuxtLink>
+      <NuxtLink :to="localePath('/impressum')" class="link link-hover">
+        {{ $t("imprintPage.title") }}
+      </NuxtLink>
+    </nav>
+    <div class="max-w-100">
+      <h6 class="footer-title">
+        {{ $t("newsletter.title") }}
+      </h6>
+      <p class="dark:text-zinc-300">
+        {{ $t("newsletter.description") }}
+      </p>
+      <NuxtLink
+        to="https://listserv.gwdg.de/mailman/listinfo/dhd-ag-datenzentren"
+        target="_blank"
+        class="btn bg-primary text-white border-primary"
+      >
+        {{ $t("newsletter.subscribe") }}
+      </NuxtLink>
+      <p class="mt-2 text-xs dark:text-zinc-300">
+        <i18n-t keypath="newsletter.visitArchive" scope="global">
+          <template #link>
+            <NuxtLink
+              class="underline"
+              to="https://listserv.gwdg.de/mailman/private/dhd-ag-datenzentren/"
+              target="_blank"
+            >
+              {{ $t("newsletter.dhdArchive") }}
+            </NuxtLink>
+          </template>
+        </i18n-t>
+      </p>
+    </div>
+  </footer>
 </template>
-
-<style>
-.v-enter-active,
-.v-leave-active {
-  transition: all 0.4s;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>

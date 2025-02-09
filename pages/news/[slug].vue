@@ -103,7 +103,7 @@ useHead({
         :tags="data.tags"
       />
       <div
-        class="prose prose-pre:max-w-xs sm:prose-pre:max-w-full prose-sm sm:prose-base md:prose-lg prose-h1:no-underline max-w-5xl mx-auto prose-zinc dark:prose-invert prose-img:rounded-lg"
+        class="prose prose-sm md:prose-base w-full max-w-4xl grow pt-10"
       >
         <ContentRenderer v-if="page" :value="page">
           <template #empty>
