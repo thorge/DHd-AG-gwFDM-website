@@ -2,7 +2,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   hooks: {},
 
   // alias: {
@@ -50,29 +50,30 @@ export default defineNuxtConfig({
          }))
       })
     },
-    '@pinia/nuxt',
+    // '@pinia/nuxt',
+    '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/seo',
     '@nuxtjs/tailwindcss',
     '@formkit/auto-animate',
 
   ],
 
   content: {
-    experimental: {
-      clientDB: true
-    },
-    highlight: {
-      theme: {
-        default: "dracula",
-        LightTheme: "dracula",
-        dark: "github-dark",
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: "github-light",
+            dark: 'github-dark',
+            sepia: 'monokai'
+          },
+        },
       },
     },
-    markdown: {
+    renderer: {
       anchorLinks: false,
     }
   },

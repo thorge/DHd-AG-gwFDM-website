@@ -1,35 +1,27 @@
 <script lang="ts" setup>
 
-const { data } = await useAsyncData('recent-post', () =>
-  queryContent('/aktuelles').limit(3).sort({ _id: -1 }).find(),
-)
+
+const route = useRoute();
+const { data: data } = await useAsyncData(route.path, () => {
+  return queryCollection("news").limit(3).order('date', 'DESC').all();
+});
 
 const formattedData = computed(() => {
   return data.value?.map((articles) => {
     return {
-      path: articles._path,
+      path: articles.path,
       title: articles.title || 'no title available',
       description: articles.description || 'no-description available',
-      image: articles.image || '/not-found.jpg',
-      alt: articles.alt || 'no alter data available',
-      ogImage: articles.ogImage || '/not-found.jpg',
+      image: articles.meta.image || '/not-found.jpg',
+      alt: articles.meta.alt || 'no alter data available',
+      ogImage: articles.meta.ogImage || '/not-found.jpg',
       date: articles.date || 'no date available',
       tags: articles.tags || [],
-      published: articles.published || false,
+      published: articles.meta.published || false,
     }
   })
 })
 
-// useHead({
-//   title: 'Home',
-//   meta: [
-//     {
-//       name: 'description',
-//       content:
-//         'Welcome To My Blog Site. Get Web Development, Javascript, Typescript, NodeJs, Vue, and Nuxt, Related Articles, Tips, Learning resources and more.',
-//     },
-//   ],
-// })
 </script>
 
 <template>

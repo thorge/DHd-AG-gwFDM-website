@@ -3,6 +3,17 @@ const props = defineProps({
   title: String,
   description: String,
 });
+
+useHead({
+  title: props.title,
+  meta: [
+    {
+      name: "description",
+      content:
+        props.description,
+    },
+  ],
+});
 </script>
 <template>
   <div class="mx-auto mb-5">
@@ -17,9 +28,6 @@ const props = defineProps({
           {{ description }}
         </p>
       </div>
-      <!-- <div class="px-6 justify-self-center">
-        <LogoDogpow />
-      </div> -->
     </div>
   </div>
 </template>

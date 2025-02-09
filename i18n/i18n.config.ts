@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
   legacy: false, // Use Composition API (modern Vue I18n)
-  locale: 'en',  // Default locale
+  locale: 'de',  // Default locale
   messages: {
     en: {
       homePage:{
@@ -37,6 +37,37 @@ export default defineI18nConfig(() => ({
       footerAbout: {
         title: 'AG gwFDM',
         description: 'Working Group for Humanities Research Data Management within the DHd Association.',
+      },
+      breadcrumb: {
+        items: {
+          news: {
+            label: "News"
+          },
+          categories: {
+            label: "Categories"
+          },
+          index: {
+            label: "Home"
+          },
+          slug: {
+            label: "Slug"
+          },
+          about: {
+            label: "About"
+          },
+          publications: {
+            label: "Publications"
+          },
+          imprint: {
+            label: "Imprint"
+          },
+          // 'news-slug': {
+          //   label: "News"
+          // },
+          events: {
+            label: "Events"
+          }
+        }
       },
       language: "Language",
       read_more: "Read More",
@@ -87,6 +118,37 @@ export default defineI18nConfig(() => ({
       footerAbout: {
         title: 'AG gwFDM',
         description: 'AG für geisteswissenschaftliches Forschungsdatenmanagement im Verband DHd.',
+      },
+      breadcrumb: {
+        items: {
+          news: {
+            label: "Aktuelles"
+          },
+          categories: {
+            label: "Kategorien"
+          },
+          index: {
+            label: "Home"
+          },
+          slug: {
+            label: "Slug"
+          },
+          about: {
+            label: "Über Uns"
+          },
+          publications: {
+            label: "Publikationen"
+          },
+          imprint: {
+            label: "Impressum"
+          },
+          // 'news-slug': {
+          //   label: "Aktuelles"
+          // },
+          events: {
+            label: "Veranstaltungen"
+          }
+        }
       },
       language: "Sprache",
       read_more: "Mehr erfahren",

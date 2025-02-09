@@ -1,31 +1,36 @@
 <script setup lang="ts">
 import type { NewsPost } from '@/types/news'
 
-const { path } = useRoute()
+const route = useRoute();
 
-const { data: articles, error } = await useAsyncData(`news-post-${path}`, () =>
-  queryContent(path).findOne(),
-)
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection("news").path(route.path).first();
+});
 
-if (error.value) navigateTo('/404')
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+    fatal: true,
+  });
+}
 
 const data = computed<NewsPost>(() => {
   return {
-    title: articles.value?.title || 'no title available',
-    description: articles.value?.description || 'no-description available',
-    image: articles.value?.image || '/not-found.jpg',
-    alt: articles.value?.alt || 'no alter data available',
-    ogImage: articles.value?.ogImage || '/not-found.jpg',
-    date: articles.value?.date || 'no date available',
-    tags: articles.value?.tags || [],
-    published: articles.value?.published || false,
+    title: page.value?.title || 'no title available',
+    description: page.value?.description || 'no-description available',
+    image: page.value?.meta?.image || '/not-found.jpg',
+    alt: page.value?.meta?.alt || 'no alter data available',
+    ogImage: page.value?.meta?.ogImage || '/not-found.jpg',
+    date: page.value?.date || 'no date available',
+    tags: page.value?.tags || [],
+    published: page.value?.meta?.published || false,
   }
 })
 
 useHead({
   title: data.value.title || '',
   meta: [
-    { name: 'description', content: data.value.description },
     {
       name: 'description',
       content: data.value.description,
@@ -100,7 +105,7 @@ useHead({
       <div
         class="prose prose-pre:max-w-xs sm:prose-pre:max-w-full prose-sm sm:prose-base md:prose-lg prose-h1:no-underline max-w-5xl mx-auto prose-zinc dark:prose-invert prose-img:rounded-lg"
       >
-        <ContentRenderer v-if="articles" :value="articles">
+        <ContentRenderer v-if="page" :value="page">
           <template #empty>
             <p>No content found.</p>
           </template>

@@ -42,7 +42,7 @@ const config = useRuntimeConfig()
         <div class="dark:text-zinc-300 pt-3 pb-2">
           <div class="flex items-center">
             <LogoDate />
-            {{ date }}
+            {{ formatDate(date) || '' }}
           </div>
           <div class="flex items-center gap-1 flex-wrap">
             <LogoTag />

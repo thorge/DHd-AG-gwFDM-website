@@ -1,9 +1,14 @@
 <script lang="ts" setup>
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-vue";
 
-const { data } = await useAsyncData("home", () =>
-  queryContent("/aktuelles").sort({ _id: -1 }).find()
-);
+// const { data } = await useAsyncData("home", () =>
+//   queryContent("/aktuelles").sort({ _id: -1 }).find()
+// );
+
+const route = useRoute();
+const { data: data } = await useAsyncData(route.path, () => {
+  return queryCollection("news").order('date', 'DESC').all();
+});
 
 const elementPerPage = ref(5);
 const pageNumber = ref(1);
@@ -12,16 +17,17 @@ const searchTest = ref("");
 const formattedData = computed(() => {
   return (
     data.value?.map((articles) => {
+      console.log(articles);
       return {
-        path: articles._path,
+        path: articles.path,
         title: articles.title || "no-title available",
         description: articles.description || "no-description available",
-        image: articles.image || "/not-found.jpg",
-        alt: articles.alt || "no alter data available",
-        ogImage: articles.ogImage || "/not-found.jpg",
+        image: articles.meta.image || "/not-found.jpg",
+        alt: articles.meta.alt || "no alter data available",
+        ogImage: articles.meta.ogImage || "/not-found.jpg",
         date: articles.date || "not-date-available",
         tags: articles.tags || [],
-        published: articles.published || false,
+        published: articles.meta.published || false,
       };
     }) || []
   );
@@ -63,24 +69,13 @@ function onNextPageClick() {
   if (pageNumber.value < totalPage.value) pageNumber.value += 1;
 }
 
-// useHead({
-//   title: "Aktuelles",
-//   meta: [
-//     {
-//       name: "description",
-//       content:
-//         "Here you will find all the blog posts I have written & published on this site.",
-//     },
-//   ],
-// });
-
-// // Generate OG Image
+// // Generate OGuseHead Image
 // const siteData = useSiteConfig();
 // defineOgImage({
 //   props: {
-//     title: "Aktuelles",
+//     title: "TODO",
 //     description:
-//       "Here you will find all the blog posts I have written & published on this site.",
+//       "TODO",
 //     siteName: siteData.url,
 //   },
 // });

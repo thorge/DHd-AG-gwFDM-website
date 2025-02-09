@@ -53,7 +53,7 @@ const config = useRuntimeConfig()
         <div class="text-sm mt-2 mb-1 md:flex md:space-x-6">
           <div class="flex items-center">
             <LogoDate />
-            <p>{{ date }}</p>
+            <p>{{ formatDate(date) || '' }}</p>
           </div>
           <div class="flex items-center gap-1 flex-wrap">
             <LogoTag />

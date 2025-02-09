@@ -15,7 +15,7 @@
       </v-btn>
     </NuxtLink>
     <p class="mt-2 text-xs dark:text-zinc-300">
-      <i18n-t keypath="newsletter.visitArchive">
+      <i18n-t keypath="newsletter.visitArchive" scope="global">
         <template #link>
           <NuxtLink
             class="underline"

@@ -19,6 +19,7 @@ withDefaults(defineProps<Props>(), {
 
 const config = useRuntimeConfig()
 
+
 </script>
 
 <template>
@@ -41,7 +42,7 @@ const config = useRuntimeConfig()
       <div class="md:flex dark:text-zinc-300 content-center gap-8 text-xs sm:text-sm">
         <div class="flex items-center font-semibold">
           <LogoDate />
-          <p>{{ date || '' }}</p>
+          <p>{{ formatDate(date) || '' }}</p>
         </div>
         <div class="flex items-center gap-2 flex-wrap my-5">
           <LogoTag />

@@ -3,7 +3,7 @@
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-  <v-snackbar
+  <!-- <v-snackbar
     v-model="website.snackbar.active"
     timeout="6000"
     :color="website.snackbar.color"
@@ -23,10 +23,10 @@
         {{ $t("close") }}
       </v-btn>
     </template>
-  </v-snackbar>
+  </v-snackbar> -->
 </template>
 <script setup lang="ts">
-const website = useWebsiteStore();
+// const website = useWebsiteStore();
 
 onMounted(async () => {
   console.log("Mounted app");

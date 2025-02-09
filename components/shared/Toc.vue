@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data: page } = await useAsyncData(`news-${route.path}`, () => {
-  return queryCollection("news").path(route.path).first();
+const { data: page } = await useAsyncData(`page-${route.path}`, () => {
+  return queryCollection("pages").path(route.path).first();
 });
 
 const links = page.value?.body?.toc?.links || []

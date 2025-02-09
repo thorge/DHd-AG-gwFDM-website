@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import type { NuxtError } from "#app";
-import { useHead } from "@vueuse/head";
+import { useHead } from "@unhead/vue";
 
 const props = defineProps({
   error: Object as () => NuxtError,

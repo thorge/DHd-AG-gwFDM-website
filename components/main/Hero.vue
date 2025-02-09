@@ -15,9 +15,6 @@ import { homePage } from '~/data'
           {{ $t('homePage.description') }}
         </p>
       </div>
-      <!-- <div class="px-6 justify-self-center">
-        <LogoDog />
-      </div> -->
     </div>
   </div>
 </template>

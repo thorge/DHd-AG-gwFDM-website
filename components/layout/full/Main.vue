@@ -125,7 +125,7 @@ const localePath = useLocalePath();
 const siteConfig = useSiteConfig();
 
 const config = useRuntimeConfig();
-const website = useWebsiteStore();
+// const website = useWebsiteStore();
 
 const sidebarMenu = shallowRef(sidebarItems);
 const sDrawer = ref(true);

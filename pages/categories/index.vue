@@ -19,12 +19,12 @@ data.value?.forEach((news) => {
 })
 
 // useHead({
-//   title: 'Kategorien',
+//   title: 'TODO',
 //   meta: [
 //     {
 //       name: 'description',
 //       content:
-//         'Below All the topics are listed on which either I have written a news or will write a news in near future.',
+//         'TODO',
 //     },
 //   ],
 // })

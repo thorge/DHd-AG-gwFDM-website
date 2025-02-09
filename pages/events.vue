@@ -9,7 +9,7 @@
           <SharedSimplePage />
         </div>
       </div>
-      <NewsToc />
+      <SharedToc />
     </div>
   </div>
 </template>
