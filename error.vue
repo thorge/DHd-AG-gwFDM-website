@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center content-center text-center h-100vh mx-2">
     <div>
-      <v-img
+      <img
         v-if="error.statusCode === 404"
         :src="`/images/background/${error.statusCode.toString()}.svg`"
         style="max-width: 500px"

@@ -6,8 +6,10 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-vue";
 // );
 
 const route = useRoute();
+const i18n = useI18n();
+
 const { data: data } = await useAsyncData(route.path, () => {
-  return queryCollection("news").order("date", "DESC").all();
+  return queryCollection(`news_${i18n.locale.value}`).order("date", "DESC").all();
 });
 
 const elementPerPage = ref(5);

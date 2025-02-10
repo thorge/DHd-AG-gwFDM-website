@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 
-
 const route = useRoute();
+const i18n = useI18n();
+
 const { data: data } = await useAsyncData(route.path, () => {
-  return queryCollection("news").limit(3).order('date', 'DESC').all();
+  return queryCollection(`news_${i18n.locale.value}`).limit(3).order('date', 'DESC').all();
 });
 
 const formattedData = computed(() => {
@@ -29,7 +30,6 @@ const formattedData = computed(() => {
     <div class="flex flex-row items-center space-x-3 pt-5 pb-3">
       <h2 class="text-4xl font-semibold dark:text-zinc-300">{{ $t('recent_posts') }}</h2>
     </div>
-
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <template v-for="post in formattedData" :key="post.title">
         <NewsCard

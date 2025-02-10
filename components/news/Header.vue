@@ -46,11 +46,9 @@ const config = useRuntimeConfig()
         </div>
         <div class="flex items-center gap-2 flex-wrap my-5">
           <LogoTag />
-          <template v-for="tag in tags" :key="tag">
-            <span class="bg-grey200 dark:bg-slate-900 rounded-md px-2 py-1 font-semibold">{{
-              tag
-            }}</span>
-          </template>
+          <span v-for="tag in tags" :key="tag" class="badge badge-outline m-1">
+            {{ tag }}
+          </span>
         </div>
       </div>
     </div>

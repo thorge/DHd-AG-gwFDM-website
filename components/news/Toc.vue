@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const route = useRoute();
+const i18n = useI18n();
 
 const { data: page } = await useAsyncData(`news-${route.path}`, () => {
-  return queryCollection("news").path(route.path).first();
+  return queryCollection(`news_${i18n.locale.value}`).path(route.path).first();
 });
 
 const links = page.value?.body?.toc?.links || []
@@ -10,9 +11,9 @@ const links = page.value?.body?.toc?.links || []
 
 <template>
   <div class="lg:col-span-3 sticky top-28 h-96 hidden lg:block justify-self-end">
-    <div class="border dark:border-gray-800 p-3 rounded-md min-w-[200px] dark:bg-slate-900">
-      <h1 class="text-sm font-bold mb-3 border-b dark:border-gray-800 pb-2">{{ $t('overview') }}</h1>
-      <NuxtLink
+    <div class="border border-gray-200 dark:border-gray-800 p-3 rounded-md min-w-[200px] dark:bg-slate-900">
+      <h1 class="text-sm font-bold mb-3 border-b border-gray-200 dark:border-gray-800 pb-2">{{ $t('overview') }}</h1>
+        <NuxtLink
         v-for="link in links"
         :key="link.id"
         :to="`#${link.id}`"

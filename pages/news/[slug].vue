@@ -2,9 +2,10 @@
 import type { NewsPost } from '@/types/news'
 
 const route = useRoute();
+const i18n = useI18n();
 
 const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection("news").path(route.path).first();
+  return queryCollection(`news_${i18n.locale.value}`).path(route.path).first();
 });
 
 if (!page.value) {
