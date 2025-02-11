@@ -46,7 +46,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
-    '@formkit/auto-animate',
   ],
 
   content: {
