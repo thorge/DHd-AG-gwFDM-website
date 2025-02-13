@@ -46,8 +46,12 @@ const config = useRuntimeConfig();
           {{ title }}
         </h2>
         <p>{{ description }}</p>
-        <div class="card-actions justify-end">
-          <div v-for="tag in tags" :key="tag" class="badge badge-outline m-1">
+        <div class="card-actions mt-2">
+          <div
+            v-for="tag in tags"
+            :key="tag"
+            class="badge border-gray-300 mr-1 mt-1"
+          >
             {{ tag }}
           </div>
         </div>

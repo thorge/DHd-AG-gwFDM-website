@@ -1,36 +1,41 @@
 <template>
   <div class="drawer z-20">
     <input id="side-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col">
+    <div class="drawer-content flex flex-col 
+  bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] 
+  shadow-sm
+  ">
       <!-- Navbar -->
-      <div class="navbar bg-base-100 w-full">
-        <div class="flex-none lg:hidden">
-          <label
-            for="side-drawer"
-            aria-label="open sidebar"
-            class="btn btn-square btn-ghost swap swap-rotate z-21"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="swap-off h-5 w-5 [:checked~*_&]:!opacity-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+      <div class="navbar w-full">
+        <div class="flex flex-1 md:gap-1 lg:gap-2 items-center">
+          <div class="flex-none lg:hidden">
+            <label
+              for="side-drawer"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost swap swap-rotate z-21"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-            <svg class="swap-on fill-current [:checked~*_&]:!rotate-0 [:checked~*_&]:!opacity-100 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
-          </label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="swap-off h-5 w-5 [:checked~*_&]:!opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+              <svg class="swap-on fill-current [:checked~*_&]:!rotate-0 [:checked~*_&]:!opacity-100 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            </label>
+          </div>
+          <div class="flex items-center gap-2">
+            <LogoBrand />
+          </div>
         </div>
-        <div class="mx-2 flex-1 px-2">
-          <LogoBrand />
-        </div>
-        <div class="navbar-end">
+        <div class="flex">
           <ul class="menu menu-horizontal max-lg:hidden">
             <!-- Navbar menu content here -->
             <li v-for="item in sidebarItems" v-bind:key="item">
@@ -38,10 +43,9 @@
                 $t(item.title)
               }}</NuxtLink>
             </li>
-          </ul>
-          <div class="dropdown dropdown-bottom dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost rounded-field">
-              <IconLanguage size="24" stroke-width="1.5" />
+          <li class="dropdown dropdown-bottom dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
+              <IconLanguage size="20" stroke-width="1.5" />
             </div>
             <ul
               tabindex="0"
@@ -58,18 +62,19 @@
                 </NuxtLink>
               </li>
             </ul>
-          </div>
+          </li>
+        </ul>
+
         </div>
       </div>
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side z-50">
       <label
         for="side-drawer"
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
       <div class="bg-base-200 min-h-full w-80">
-        <LogoBrand class="ml-16 mt-3" />
         <ul class="menu p-4">
           <li v-for="item in sidebarItems" v-bind:key="item">
             <NuxtLink :to="localePath(item.to)">

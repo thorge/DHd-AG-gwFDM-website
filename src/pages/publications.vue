@@ -1,9 +1,11 @@
 <template>
-  <div class="container">
+  <div>
     <SharedHero
       :title="$t('publicationsPage.title')"
       :description="$t('publicationsPage.description')"
     />
-    <SharedSimplePage />
+    <div class="mx-auto lg:max-w-content">
+      <SharedSimplePage />
+    </div>
   </div>
 </template>

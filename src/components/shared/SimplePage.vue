@@ -14,7 +14,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <article class="prose prose-sm md:prose-base w-full max-w-4xl grow pt-10">
+  <article class="prose prose-sm md:prose-base w-full max-w-3xl grow pt-2 mx-auto">
     <ContentRenderer v-if="page" :value="page" />
   </article>
 </template>

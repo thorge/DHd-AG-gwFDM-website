@@ -20,7 +20,7 @@ useHead({
 </script>
 
 <template>
-  <div class="hero bg-base-200 min-h-screen-50 my-4">
+  <div class="hero bg-base-200 min-h-screen-50 mt-4 mb-8">
     <div class="hero-content text-center my-8">
       <div class="max-w-sm lg:max-w-md">
         <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">{{ title }}</h1>

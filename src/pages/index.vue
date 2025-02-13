@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 // // Generate OG Image
 // defineOgImageComponent('About', {
 //   headline: 'Greetings 👋',
@@ -10,8 +9,11 @@
 </script>
 
 <template>
-  <main class="container max-w-5xl mx-auto text-zinc-600">
-    <SharedHero :title="$t('homePage.title')" :description="$t('homePage.description')" />
+  <div class="mx-auto lg:max-w-content">
+    <SharedHero
+      :title="$t('homePage.title')"
+      :description="$t('homePage.description')"
+    />
     <MainRecent />
-  </main>
+  </div>
 </template>

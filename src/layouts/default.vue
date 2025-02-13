@@ -1,7 +1,7 @@
 <template>
   <MainNavbar />
   <main class="p-6">
-    <div class="container max-w-5xl mx-auto">
+    <div class="container max-w-8xl mx-auto">
       <nav v-if="breadcrumbItems.length > 1" aria-label="Breadcrumbs">
         <div class="breadcrumbs text-sm">
           <ul>

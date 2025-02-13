@@ -1,4 +1,7 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "../layouts";
+@source "../pages";
+@source "../components";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 @plugin "daisyui/theme" {
