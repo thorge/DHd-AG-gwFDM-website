@@ -17,7 +17,6 @@
   <MainFooter />
 </template>
 <script setup lang="ts">
-import { IconHome2 } from "@tabler/icons-vue";
 
 const siteConfig = useSiteConfig();
 const title = ref(siteConfig.name);
