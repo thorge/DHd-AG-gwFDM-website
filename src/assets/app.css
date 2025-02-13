@@ -2,6 +2,7 @@
 @source "../layouts";
 @source "../pages";
 @source "../components";
+@theme { --font-sans: "Nunito", "sans-serif"; }
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 @plugin "daisyui/theme" {
