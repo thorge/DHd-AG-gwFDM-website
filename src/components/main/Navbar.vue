@@ -53,7 +53,7 @@
               }}</NuxtLink>
             </li>
           </ul>
-          <ul class="menu menu-horizontal max-lg:hidden">
+          <ul class="menu menu-horizontal max-sm:hidden">
             <li>
               <MainThemeToggle />
             </li>
@@ -81,13 +81,13 @@
         </div>
       </div>
     </div>
-    <div class="drawer-side z-50">
+    <div class="drawer-side z-20">
       <label
         for="side-drawer"
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
-      <div class="bg-base-200 min-h-full w-80">
+      <div class="bg-base-200 min-h-full w-60 mt-15">
         <ul class="menu p-4">
           <li v-for="item in sidebarItems" v-bind:key="item">
             <NuxtLink :to="localePath(item.to)">
@@ -102,6 +102,21 @@
               />
               {{ $t(item.title) }}
             </NuxtLink>
+          </li>
+        </ul>
+        <ul tabindex="0" class="menu menu-horizontal">
+          <li
+            v-for="locale in locales"
+            :key="locale.code"
+            color="primary"
+            :aria-label="`Switch language to ${locale.code}`"
+          >
+            <NuxtLink :to="switchLocalePath(locale.code)">
+              {{ locale.code.toUpperCase() }}
+            </NuxtLink>
+          </li>
+          <li>
+            <MainThemeToggle />
           </li>
         </ul>
       </div>

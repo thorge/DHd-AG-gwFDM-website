@@ -129,12 +129,6 @@ function onNextPageClick() {
         :published="post.published"
       />
     </template>
-
-    <NewsEmpty
-      v-if="paginatedData.length <= 0"
-      title="Post Not Found"
-      image="/not-found.jpg"
-    />
   </div>
 
   <div v-if="totalPage > 1" class="flex justify-center items-center space-x-6">

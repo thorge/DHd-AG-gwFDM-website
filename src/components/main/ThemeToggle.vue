@@ -1,8 +1,19 @@
+<script setup>
+// Access the theme store
+const themeStore = useThemeStore();
+
+// Initialize the theme on component mount
+themeStore.initializeTheme();
+
+// Access the current theme directly from the store's state
+const currentTheme = computed(() => themeStore.currentTheme); // Reactive getter for theme
+const toggleTheme = themeStore.toggleTheme; // Function to tgl the theme
+</script>
+
 <template>
-  <div>
-    <button @click="toggleDarkMode" class="theme-icon">
+  <a @click="toggleTheme" class="btn btn-ghost btn-sm theme-icon">
+    <span v-if="currentTheme === 'light'">
       <svg
-        v-if="currentTheme === 'light'"
         width="18"
         height="18"
         viewBox="0 0 24 24"
@@ -17,8 +28,9 @@
           stroke-linejoin="round"
         />
       </svg>
+    </span>
+    <span v-else>
       <svg
-        v-else
         width="18"
         height="18"
         viewBox="0 0 24 24"
@@ -40,31 +52,6 @@
           stroke-linejoin="round"
         />
       </svg>
-    </button>
-  </div>
+    </span>
+  </a>
 </template>
-
-<script setup>
-
-// Use a reactive variable for the theme
-const currentTheme = ref("light");
-
-// Function to toggle the dark mode
-function toggleDarkMode() {
-  currentTheme.value = currentTheme.value === "light" ? "dark" : "light";
-  document.querySelector("html").setAttribute("data-theme", currentTheme.value);
-  // Save the preference in localStorage
-  localStorage.setItem("theme", currentTheme.value);
-}
-
-// Set up the theme based on localStorage or fallback to the default
-onMounted(() => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    currentTheme.value = savedTheme;
-    document.querySelector("html").setAttribute("data-theme", savedTheme);
-  } else {
-    document.querySelector("html").setAttribute("data-theme", currentTheme.value);
-  }
-});
-</script>

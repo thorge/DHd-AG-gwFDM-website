@@ -7,21 +7,11 @@ export default defineNuxtConfig({
 
   srcDir: 'src/',
 
-  // alias: {
-  //   pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
-  // },
-
   app: {
-    baseURL: '/',
+    baseURL: '/DHd-AG-gwFDM-website/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      // link: [
-      //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      // ],
-      // htmlAttrs: {
-      //   "data-theme": 'light'
-      // }
     }
   },
 
@@ -42,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    // '@pinia/nuxt',
+    '@pinia/nuxt',
     '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxtjs/i18n',

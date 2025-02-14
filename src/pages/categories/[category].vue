@@ -72,7 +72,9 @@ const formattedData = computed(() => {
         :tags="post.tags"
         :published="post.published"
       />
-      <NewsEmpty v-if="data?.length === 0" />
+      <p v-if="data?.length === 0">
+        No Content
+      </p>
     </div>
   </main>
 </template>
