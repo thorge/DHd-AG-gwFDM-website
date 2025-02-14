@@ -28,7 +28,7 @@ const formattedData = computed(() => {
 <template>
   <div class="pb-10 px-4">
     <div class="flex flex-row items-center space-x-3 pt-5 pb-3">
-      <h2 class="text-4xl font-semibold dark:text-zinc-300">{{ $t('recent_posts') }}</h2>
+      <h2 class="text-4xl font-semibold text-base-content">{{ $t('recent_posts') }}</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <template v-for="post in formattedData" :key="post.title">

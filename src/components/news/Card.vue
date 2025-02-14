@@ -28,17 +28,19 @@ const config = useRuntimeConfig();
 </script>
 
 <template>
-  <article class="card bg-base-100 group m-2 shadow-sm">
-    <NuxtLink :to="localePath(path)">
+  <NuxtLink :to="localePath(path)">
+    <article
+      class="card bg-base-100 border border-base-content/10 group m-2"
+    >
       <figure>
         <img
-          class="object-cover object-center group-hover:scale-[1.02] transition-all duration-500"
+          class="group-hover:scale-[1.02] transition-all duration-500"
           :src="config.public.baseURL + image || ''"
           :alt="alt"
         />
       </figure>
       <div class="card-body">
-        <div class="flex items-center">
+        <div class="flex items-center text-base-content/70">
           <LogoDate />
           {{ formatDate(date) || "" }}
         </div>
@@ -50,12 +52,12 @@ const config = useRuntimeConfig();
           <div
             v-for="tag in tags"
             :key="tag"
-            class="badge border-gray-300 mr-1 mt-1"
+            class="badge text-base-content/70 border-base-content/50 mr-1 mt-1"
           >
             {{ tag }}
           </div>
         </div>
       </div>
-    </NuxtLink>
-  </article>
+    </article>
+  </NuxtLink>
 </template>

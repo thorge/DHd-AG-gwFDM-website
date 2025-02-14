@@ -1,10 +1,9 @@
 <template>
   <div class="drawer z-20">
     <input id="side-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col 
-  bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] 
-  shadow-sm
-  ">
+    <div
+      class="drawer-content flex flex-col bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm"
+    >
       <!-- Navbar -->
       <div class="navbar w-full">
         <div class="flex flex-1 md:gap-1 lg:gap-2 items-center">
@@ -28,7 +27,17 @@
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-              <svg class="swap-on fill-current [:checked~*_&]:!rotate-0 [:checked~*_&]:!opacity-100 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+              <svg
+                class="swap-on fill-current [:checked~*_&]:!rotate-0 [:checked~*_&]:!opacity-100 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
             </label>
           </div>
           <div class="flex items-center gap-2">
@@ -43,28 +52,32 @@
                 $t(item.title)
               }}</NuxtLink>
             </li>
-          <li class="dropdown dropdown-bottom dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
-              <IconLanguage size="20" stroke-width="1.5" />
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu bg-base-100 rounded-box z-1 p-2 shadow-sm"
-            >
-              <li
-                v-for="locale in locales"
-                :key="locale.code"
-                color="primary"
-                :aria-label="`Switch language to ${locale.code}`"
+          </ul>
+          <ul class="menu menu-horizontal max-lg:hidden">
+            <li>
+              <MainThemeToggle />
+            </li>
+            <li class="dropdown dropdown-bottom dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
+                <IconLanguage size="20" stroke-width="1.5" />
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-base-100 rounded-box z-1 p-2 shadow-sm"
               >
-                <NuxtLink :to="switchLocalePath(locale.code)">
-                  {{ locale.code.toUpperCase() }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
+                <li
+                  v-for="locale in locales"
+                  :key="locale.code"
+                  color="primary"
+                  :aria-label="`Switch language to ${locale.code}`"
+                >
+                  <NuxtLink :to="switchLocalePath(locale.code)">
+                    {{ locale.code.toUpperCase() }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -98,9 +111,7 @@
 
 <script setup lang="ts">
 import sidebarItems from "~/components/main/sidebarItem";
-import {
-  IconLanguage,
-} from "@tabler/icons-vue";
+import { IconLanguage } from "@tabler/icons-vue";
 
 const { locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();

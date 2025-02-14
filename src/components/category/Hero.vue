@@ -3,11 +3,11 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center">
       <div class="md:px-6">
         <h1
-          class="dark:text-zinc-300 font-semibold leading-tight text-4xl md:text-5xl my-5"
+          class="text-base-content font-semibold leading-tight text-4xl md:text-5xl my-5"
         >
           {{ $t('categoryPage.title') }}
         </h1>
-        <p class="dark:text-zinc-300">
+        <p class="text-base-content/70">
           {{ $t('categoryPage.description') }}
         </p>
       </div>

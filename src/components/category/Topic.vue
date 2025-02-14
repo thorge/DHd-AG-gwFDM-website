@@ -14,8 +14,8 @@ const category = computed(() => {
 
 <template>
   <div class="container mx-auto">
-    <div class="p-6 my-4 mx-2 rounded-md bg-grey200 dark:bg-slate-900">
-      <h1 class="dark:text-white font-semibold leading-tight text-xl md:text-2xl">
+    <div class="badge text-base-content/70 border-base-content/50 p-6 my-4 mx-2">
+      <h1 class="font-semibold leading-tight text-xl md:text-2xl">
         #{{ category }}
       </h1>
     </div>

@@ -137,11 +137,11 @@ function onNextPageClick() {
     />
   </div>
 
-  <div class="flex justify-center items-center space-x-6">
+  <div v-if="totalPage > 1" class="flex justify-center items-center space-x-6">
     <button :disabled="pageNumber <= 1" @click="onPreviousPageClick">
       <IconChevronLeft
         size="30"
-        :class="{ 'text-secondary dark:text-secondary': pageNumber > 1 }"
+        :class="{ 'text-base-content': pageNumber > 1 }"
       />
     </button>
     <p>{{ pageNumber }} / {{ totalPage }}</p>
@@ -149,7 +149,7 @@ function onNextPageClick() {
       <IconChevronRight
         size="30"
         :class="{
-          'text-secondary dark:text-secondary': pageNumber < totalPage,
+          'text-base-content': pageNumber < totalPage,
         }"
       />
     </button>

@@ -10,7 +10,7 @@
         >
           {{ $t('newsPage.title') }}
         </h1>
-        <p class="dark:text-zinc-300">
+        <p class="text-base-content/70">
           {{ $t('newsPage.description') }}
         </p>
       </div>

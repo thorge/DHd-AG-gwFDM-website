@@ -9,10 +9,12 @@ const localePath = useLocalePath();
   >
     <div class="max-w-100">
       <h6 class="footer-title">{{ $t("footerAbout.title") }}</h6>
-      <p class="py-2 dark:text-zinc-300">
+      <p class="py-2">
         {{ $t("footerAbout.description") }}
       </p>
-      © {{ new Date().getFullYear() }} – AG gwFDM
+      <span class="text-base-content/70">
+        © {{ new Date().getFullYear() }} – AG gwFDM
+      </span>
     </div>
     <nav>
       <h6 class="footer-title">Links</h6>
@@ -38,17 +40,17 @@ const localePath = useLocalePath();
       <h6 class="footer-title">
         {{ $t("newsletter.title") }}
       </h6>
-      <p class="dark:text-zinc-300">
+      <p class="text-base-content">
         {{ $t("newsletter.description") }}
       </p>
       <NuxtLink
         to="https://listserv.gwdg.de/mailman/listinfo/dhd-ag-datenzentren"
         target="_blank"
-        class="btn bg-primary text-white border-primary"
+        class="btn btn-primary text-white border-primary"
       >
         {{ $t("newsletter.subscribe") }}
       </NuxtLink>
-      <p class="mt-2 text-xs dark:text-zinc-300">
+      <p class="mt-2 text-xs text-base-content/70">
         <i18n-t keypath="newsletter.visitArchive" scope="global">
           <template #link>
             <NuxtLink

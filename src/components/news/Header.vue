@@ -24,7 +24,7 @@ const config = useRuntimeConfig()
 
 <template>
   <header>
-    <h1 class="text-xl text-primary dark:text-zinc-300 md:text-3xl lg:text-4xl m-7 font-bold text-center">
+    <h1 class="text-xl text-base-content md:text-3xl lg:text-4xl m-7 font-bold text-center">
       {{ title || '' }}
     </h1>
     <img
@@ -34,19 +34,19 @@ const config = useRuntimeConfig()
       class="m-auto rounded-2xl shadow-lg h-32 md:h-72 w-4/6 md:w-4/5 content-center object-cover"
     />
     <p
-      class="text-xs sm:text-sm my-3 max-w-xl mx-auto text-center text-zinc-600 dark:text-zinc-400"
+      class="text-xs sm:text-sm my-3 max-w-xl mx-auto text-center text-base-content/70"
     >
       {{ description }}
     </p>
     <div class="flex w-full justify-center text-xs md:text-base my-8">
-      <div class="md:flex dark:text-zinc-300 content-center gap-8 text-xs sm:text-sm">
-        <div class="flex items-center font-semibold">
+      <div class="md:flex text-base-content/70 content-center gap-8 text-xs sm:text-sm">
+        <div class="flex items-center font-semibold text-base-content/70">
           <LogoDate />
           <p>{{ formatDate(date) || '' }}</p>
         </div>
         <div class="flex items-center gap-2 flex-wrap my-5">
           <LogoTag />
-          <span v-for="tag in tags" :key="tag" class="badge badge-outline m-1">
+          <span v-for="tag in tags" :key="tag" class="badge text-base-content/70 border-base-content/50 m-1">
             {{ tag }}
           </span>
         </div>

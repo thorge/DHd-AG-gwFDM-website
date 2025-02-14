@@ -10,10 +10,10 @@ const links = page.value?.body?.toc?.links || []
 </script>
 
 <template>
-  <div class="lg:col-span-3 sticky top-28 h-96 hidden lg:block justify-self-end">
-    <div class="border border-gray-200 dark:border-gray-800 p-3 rounded-md min-w-[200px] dark:bg-slate-900">
-      <h1 class="text-sm font-bold mb-3 border-b border-gray-200 dark:border-gray-800 pb-2">{{ $t('overview') }}</h1>
-        <NuxtLink
+  <div class="hidden lg:block lg:col-span-3 sticky top-28 h-96 justify-self-end">
+    <div class="border border-base-content/50 p-3 rounded-md min-w-[200px]">
+      <h1 class="text-sm font-bold mb-3 border-b border-base-content/50 pb-2">{{ $t('overview') }}</h1>
+      <NuxtLink
         v-for="link in links"
         :key="link.id"
         :to="`#${link.id}`"

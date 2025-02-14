@@ -56,7 +56,7 @@ const formattedData = computed(() => {
 </script>
 
 <template>
-  <main class="container max-w-5xl mx-auto text-zinc-600 px-4">
+  <main class="container max-w-5xl mx-auto text-base-content/70 px-4">
     <CategoryTopic />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <NewsCard
