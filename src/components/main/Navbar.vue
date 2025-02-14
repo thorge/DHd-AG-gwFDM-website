@@ -87,7 +87,7 @@
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
-      <div class="bg-base-200 min-h-full w-60 mt-15">
+      <div class="bg-base-200 min-h-full w-60 pt-15">
         <ul class="menu p-4">
           <li v-for="item in sidebarItems" v-bind:key="item">
             <NuxtLink :to="localePath(item.to)">
