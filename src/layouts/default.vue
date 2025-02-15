@@ -6,7 +6,7 @@
         <div class="breadcrumbs text-sm">
           <ul>
             <li v-for="item in breadcrumbItems" v-bind:key="item.label">
-              <NuxtLink v-bind="item">{{ item.label }}</NuxtLink>
+              <NuxtLink :to="localePath(item.to)">{{ item.label }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -20,6 +20,7 @@
 
 const siteConfig = useSiteConfig();
 const title = ref(siteConfig.name);
+const localePath = useLocalePath();
 
 const homeLabel = ref(
   siteConfig.breadcrumb?.home?.label
