@@ -1,6 +1,6 @@
 <template>
   <div class="drawer z-20 sticky top-0">
-    <input id="side-drawer" type="checkbox" class="drawer-toggle" />
+    <input v-model="isDrawerOpen" id="side-drawer" type="checkbox" class="drawer-toggle" />
     <div
       class="drawer-content flex flex-col bg-base-100/90 text-base-content z-30 flex h-16 w-full justify-center backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm"
     >
@@ -90,7 +90,7 @@
       <div class="bg-base-200 min-h-full w-60 pt-15">
         <ul class="menu p-4">
           <li v-for="item in sidebarItems" v-bind:key="item">
-            <NuxtLink :to="localePath(item.to)">
+            <NuxtLink :to="localePath(item.to)" @click="isDrawerOpen = !isDrawerOpen">
               <component
                 :is="item.icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,6 +122,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup lang="ts">
@@ -134,5 +135,7 @@ const localePath = useLocalePath();
 const siteConfig = useSiteConfig();
 
 const config = useRuntimeConfig();
-// const website = useWebsiteStore();
+
+const isDrawerOpen = ref(false);
+
 </script>
