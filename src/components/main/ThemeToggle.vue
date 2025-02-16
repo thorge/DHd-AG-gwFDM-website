@@ -10,7 +10,7 @@ const tglTheme = themeStore.toggleTheme; // Function to tgl the theme
     <input
       type="checkbox"
       @change="tglTheme"
-      :checked="currentTheme == 'dark'"
+      :checked="currentTheme === 'dark'"
       aria-label="Toggle theme"
     />
     <svg
