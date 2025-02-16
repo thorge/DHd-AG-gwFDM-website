@@ -1,6 +1,6 @@
 export const useThemeStore = defineStore("themeStore", {
   state: () => ({
-    theme: "light",  // Default theme
+    theme: "",
   }),
 
   actions: {
