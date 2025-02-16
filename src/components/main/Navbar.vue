@@ -1,8 +1,8 @@
 <template>
-  <div class="drawer z-20">
+  <div class="drawer z-20 sticky top-0">
     <input id="side-drawer" type="checkbox" class="drawer-toggle" />
     <div
-      class="drawer-content flex flex-col bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm"
+      class="drawer-content flex flex-col bg-base-100/90 text-base-content z-30 flex h-16 w-full justify-center backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm"
     >
       <!-- Navbar -->
       <div class="navbar w-full">
