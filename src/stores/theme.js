@@ -22,9 +22,16 @@ export const useThemeStore = defineStore("themeStore", {
     },
 
     initializeTheme() {
-      if (typeof window !== "undefined") {  // Check if we are in the browser
+      if (typeof window !== "undefined") { // Check if we are in the browser
         const savedTheme = localStorage.getItem("theme");
-        this.theme = savedTheme || "light";  // Fallback to light if no saved theme
+        if (savedTheme) {
+          // Use the saved theme if it exists
+          this.theme = savedTheme;
+        } else {
+          // Fallback to system preference if no saved theme
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          this.theme = prefersDark ? "dark" : "light";
+        }
         this.updateThemeInDOM(this.theme);
       }
     },
