@@ -6,12 +6,18 @@
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 @plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+}
+@plugin "daisyui/theme" {
   name: "dark";
   prefersdark: true;
-  --color-primary: oklch(41.3% 0.1495 7.65);
 }
 @plugin "daisyui/theme" {
   name: "light";
-  default: true;
+  --color-primary: oklch(41.3% 0.1495 7.65);
+}
+@plugin "daisyui/theme" {
+  name: "dark";
   --color-primary: oklch(41.3% 0.1495 7.65);
 }
