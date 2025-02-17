@@ -6,10 +6,6 @@ export default defineI18nConfig(() => ({
       newsPage: {
         description: "Catch up on the latest updates, announcements, and stories from our community.",
       },
-      categoryPage: {
-        title: "Categories",
-        description: "Browse through our news categories to explore updates and stories tailored to your interests.",
-      },
       footerAbout: {
         title: 'AG gwFDM',
         description: 'Working Group for Humanities Research Data Management within the DHd Association.',
@@ -18,9 +14,6 @@ export default defineI18nConfig(() => ({
         items: {
           news: {
             label: "News"
-          },
-          categories: {
-            label: "Categories"
           },
           index: {
             label: "Home"
@@ -63,10 +56,6 @@ export default defineI18nConfig(() => ({
       newsPage: {
         description: "Erfahren Sie die neuesten Nachrichten, Ankündigungen und Geschichten aus unserer Gemeinschaft.",
       },
-      categoryPage: {
-        title: "Kategorien",
-        description: "Durchstöbern Sie unsere Nachrichtenkategorien, um Updates und Geschichten nach Ihren Interessen zu entdecken.",
-      },
       footerAbout: {
         title: 'AG gwFDM',
         description: 'AG für geisteswissenschaftliches Forschungsdatenmanagement im Verband DHd.',
@@ -75,9 +64,6 @@ export default defineI18nConfig(() => ({
         items: {
           news: {
             label: "Aktuelles"
-          },
-          categories: {
-            label: "Kategorien"
           },
           index: {
             label: "Home"
