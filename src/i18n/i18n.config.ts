@@ -15,11 +15,14 @@ export default defineI18nConfig(() => ({
           news: {
             label: "News"
           },
+          'news-slug': {
+            label: "News Item"
+          },
           index: {
             label: "Home"
           },
           slug: {
-            label: "Slug"
+            label: "404 Error"
           },
           about: {
             label: "About"
@@ -65,11 +68,14 @@ export default defineI18nConfig(() => ({
           news: {
             label: "Aktuelles"
           },
+          'news-slug': {
+            label: "News Beitrag"
+          },
           index: {
             label: "Home"
           },
           slug: {
-            label: "Slug"
+            label: "404 Fehler"
           },
           about: {
             label: "Über Uns"

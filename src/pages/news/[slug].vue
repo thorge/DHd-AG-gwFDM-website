@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { NewsBreadcrumbs } from '#components';
 import type { NewsPost } from '@/types/news'
 
 const route = useRoute();
@@ -29,6 +30,11 @@ const data = computed<NewsPost>(() => {
   }
 })
 
+definePageMeta({
+  layout: "news"
+})
+
+
 useHead({
   title: data.value.title || '',
   meta: [
@@ -42,6 +48,7 @@ useHead({
 </script>
 
 <template>
+  <NewsBreadcrumbs :title="data.title" />
   <div class="px-6 container max-w-5xl mx-auto sm:grid grid-cols-12 gap-x-12">
     <div class="col-span-12 lg:col-span-9">
       <NewsHeader
