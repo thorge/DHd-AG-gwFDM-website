@@ -1,6 +1,6 @@
 ---
 title: 'Publikationen'
-description: 'Publikationen der AG geisteswissenschaftliches Forschungsdatenmanagement (AG gwFDM) im Verband DHd'
+description: 'Entdecken Sie unsere neuesten Forschungsergebnisse, Einblicke und Publikationen zu wichtigen Themen.'
 ---
 
 - Ulrike Wuttke, Patrick Helling und Jonathan Blumtritt für die DHd-AG Datenzentren sowie A. Czmiel, K. Moeller, P. Gietz, K. Wörner, C. Wagner und B. Ebert, ‘Wie es Euch gefällt? Perspektiven wissenschaftsgeleiteter Organisationsformen des Datenmanagements für die Geisteswissenschaften (Bericht vom Panel der AG Datenzentren während der DHd 2019, Mainz & Frankfurt am Main)’, 20.06.2019. [https://dhd-blog.org/?p=9740](https://dhd-blog.org/?p=9740)

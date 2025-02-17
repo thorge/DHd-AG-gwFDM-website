@@ -1,6 +1,6 @@
 ---
 title: 'Kontakt'
-description: 'Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre Fragen, Anregungen und Kooperationen gerne zur Verfügung.'
+description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre Fragen, Anregungen und Kooperationen gerne zur Verfügung."
 ---
 
 ## Convenor*innen

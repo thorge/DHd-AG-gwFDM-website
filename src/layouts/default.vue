@@ -43,10 +43,4 @@ const breadcrumbItems = useBreadcrumbItems({
   overrides: overrides,
 });
 
-useHead({
-  meta: [{ content: title }],
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} – ${title.value}` : title.value;
-  },
-});
 </script>

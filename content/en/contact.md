@@ -1,6 +1,7 @@
 ---
 title: 'Contact'
 description: "Get in touch with the AG gwFDM – we're here to answer your questions, hear your feedback, and explore collaborations."
+
 ---
 
 ## Convenors

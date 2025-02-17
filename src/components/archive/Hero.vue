@@ -8,7 +8,7 @@
         <h1
           class="font-semibold leading-tight text-4xl md:text-5xl my-5"
         >
-          {{ $t('newsPage.title') }}
+          {{ $t('breadcrumb.items.news.label') }}
         </h1>
         <p class="text-base-content/70">
           {{ $t('newsPage.description') }}

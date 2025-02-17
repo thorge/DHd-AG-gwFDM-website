@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-vue";
 
-// const { data } = await useAsyncData("home", () =>
-//   queryContent("/aktuelles").sort({ _id: -1 }).find()
-// );
-
 const route = useRoute();
 const i18n = useI18n();
 
@@ -70,21 +66,11 @@ function onNextPageClick() {
   if (pageNumber.value < totalPage.value) pageNumber.value += 1;
 }
 
-// // Generate OGuseHead Image
-// const siteData = useSiteConfig();
-// defineOgImage({
-//   props: {
-//     title: "TODO",
-//     description:
-//       "TODO",
-//     siteName: siteData.url,
-//   },
-// });
 </script>
 
 <template>
   <SharedHero
-    :title="$t('newsPage.title')"
+    :title="$t('breadcrumb.items.news.label')"
     :description="$t('newsPage.description')"
   />
 

@@ -1,6 +1,6 @@
 ---
 title: 'Veranstaltungen'
-description: 'Veranstaltungen der AG geisteswissenschaftliches Forschungsdatenmanagement (AG gwFDM) im Verband DHd'
+description: "Bleiben Sie informiert über unsere neuesten Veranstaltungen, Workshops und Vernetzungsmöglichkeiten."
 ---
 
 ## 2022

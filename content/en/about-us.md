@@ -1,6 +1,6 @@
 ---
 title: 'About Us'
-description: "Learn more about the working group for humanities research data management (AG gwFDM) within the DHd association."
+description: "Learn more about who we are, our mission, and the values that drive us forward."
 ---
 
 ## About the Working Group

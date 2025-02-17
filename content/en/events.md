@@ -1,6 +1,6 @@
 ---
 title: 'Events'
-description: 'Events of the Working Group on Humanities Research Data Management (AG gwFDM) in the DHd Association'
+description: "Stay updated on our latest events, workshops, and opportunities to connect."
 ---
 
 ## 2022

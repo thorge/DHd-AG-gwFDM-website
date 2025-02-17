@@ -1,6 +1,6 @@
 ---
 title: 'Über Uns'
-description: 'Erfahre mehr über die AG geisteswissenschaftliches Forschungsdatenmanagement (AG gwFDM) im Verband DHd.'
+description: "Erfahren Sie mehr über uns, unsere Mission und die Werte, die uns antreiben."
 ---
 
 ## Über die Arbeitsgruppe

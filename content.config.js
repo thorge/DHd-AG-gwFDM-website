@@ -7,8 +7,7 @@ export default defineContentConfig({
       source: {
         include: '**/*.md',
         exclude: ['aktuelles/*.md'],
-      }
-
+      },
     }),
     news_de: defineCollection({
       type: 'page',

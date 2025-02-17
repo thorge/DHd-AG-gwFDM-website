@@ -22,31 +22,28 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-  // {
-  //   header: 'DHd-AG gwFDM',
-  // },
   {
-    title: 'newsPage.title',
+    title: 'breadcrumb.items.news.label',
     icon: IconNews,
     to: 'news',
   },
   {
-    title: 'eventsPage.title',
+    title: 'breadcrumb.items.events.label',
     icon: IconCalendarEvent,
     to: 'events',
   },
   {
-    title: 'publicationsPage.title',
+    title: 'breadcrumb.items.publications.label',
     icon: IconBooks,
     to: 'publications',
   },
   {
-    title: 'aboutPage.title',
+    title: 'breadcrumb.items.about.label',
     icon: IconInfoCircle,
     to: 'about',
   },
   {
-    title: 'contactPage.title',
+    title: 'breadcrumb.items.contact.label',
     icon: IconMessages,
     to: 'contact',
   },

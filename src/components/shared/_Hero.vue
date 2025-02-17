@@ -8,15 +8,6 @@ const props = defineProps({
   },
 });
 
-useHead({
-  title: props.title,
-  meta: [
-    {
-      name: "description",
-      content: props.description,
-    },
-  ],
-});
 </script>
 
 <template>
@@ -24,7 +15,7 @@ useHead({
     <div class="hero-content text-center my-8">
       <div class="max-w-sm lg:max-w-md">
         <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">{{ title }}</h1>
-        <p class="py-6">
+        <p v-if="description" class="py-6">
           {{ description }}
         </p>
         <RouterLink
