@@ -54,6 +54,8 @@ export default defineI18nConfig(() => ({
         dhdArchive: "DHd list archive"
       },
       serviceCatalogue: "Service Catalogue",
+      noPostsFound: "No posts found.",
+      noContentFound: "No content found."
     },
     de: {
       newsPage: {
@@ -107,6 +109,8 @@ export default defineI18nConfig(() => ({
         dhdArchive: "Archiv der Liste DHd"
       },
       serviceCatalogue: "Dienstekatalog",
+      noPostsFound: "Es wurden keine Beiträge gefunden.",
+      noContentFound: "Es wurde kein Inhalt gefunden."
     }
   }
 }))
