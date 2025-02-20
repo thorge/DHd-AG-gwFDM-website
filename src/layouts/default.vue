@@ -19,7 +19,6 @@
 <script setup lang="ts">
 
 const siteConfig = useSiteConfig();
-const title = ref(siteConfig.name);
 const localePath = useLocalePath();
 
 const homeLabel = ref(
