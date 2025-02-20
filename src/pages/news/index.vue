@@ -5,7 +5,9 @@ const route = useRoute();
 const i18n = useI18n();
 
 const { data: data } = await useAsyncData(route.path, () => {
-  return queryCollection(`news_${i18n.locale.value}`).order("date", "DESC").all();
+  return queryCollection(`news_${i18n.locale.value}`)
+    .order("date", "DESC")
+    .all();
 });
 
 const elementPerPage = ref(5);
@@ -34,7 +36,8 @@ const searchData = computed(() => {
   return (
     formattedData.value.filter((data) => {
       const lowerTitle = data.title.toLocaleLowerCase();
-      if (lowerTitle.search(searchField.value.toLocaleLowerCase()) !== -1) return true;
+      if (lowerTitle.search(searchField.value.toLocaleLowerCase()) !== -1)
+        return true;
       else return false;
     }) || []
   );
@@ -65,7 +68,6 @@ const totalPage = computed(() => {
 function onNextPageClick() {
   if (pageNumber.value < totalPage.value) pageNumber.value += 1;
 }
-
 </script>
 
 <template>
@@ -114,6 +116,9 @@ function onNextPageClick() {
         :tags="post.tags"
         :published="post.published"
       />
+    </template>
+    <template v-if="paginatedData?.length === 0">
+      {{ $t('noPostsFound') }}
     </template>
   </div>
 

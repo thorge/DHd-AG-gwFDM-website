@@ -4,6 +4,7 @@ import type { NewsPost } from '@/types/news'
 
 const route = useRoute();
 const i18n = useI18n();
+const setI18nParams = useSetI18nParams()
 
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection(`news_${i18n.locale.value}`).path(route.path).first();
@@ -45,6 +46,13 @@ useHead({
   ],
 })
 
+if (page.value?.meta?.localePath) {
+  const targetLocale = i18n.locale.value === "de" ? "en" : "de";
+  setI18nParams({
+    [targetLocale]: { slug: page.value.meta.localePath }
+  });
+}
+
 </script>
 
 <template>
@@ -64,7 +72,7 @@ useHead({
       >
         <ContentRenderer v-if="page" :value="page">
           <template #empty>
-            <p>No content found.</p>
+            <p>{{ $t('noContentFound') }}</p>
           </template>
         </ContentRenderer>
       </div>
