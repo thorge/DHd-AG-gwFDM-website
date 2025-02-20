@@ -45,7 +45,7 @@ const formattedData = computed(() => {
         />
       </template>
       <template v-if="data?.length === 0">
-        No Post Found
+        {{ $t('noPostsFound') }}
       </template>
     </div>
   </div>
