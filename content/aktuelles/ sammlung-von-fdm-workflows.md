@@ -7,6 +7,7 @@ alt: Sammlung von FDM-Beratungsworkflows
 ogImage: /assets/images/news/workflow.jpg
 tags: ['FDM-Beratungen', 'AG']
 published: true
+localePath: collection-of-rdm-workflows
 ---
 
 ## FDM-Beratung

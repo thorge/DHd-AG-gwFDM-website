@@ -6,7 +6,8 @@ image: /assets/images/news/workflow.jpg
 alt: Collection of RDM Consulting Workflows  
 ogImage: /assets/images/news/workflow.jpg  
 tags: ['RDM Consulting', 'Working Group']  
-published: true  
+published: true
+localePath: sammlung-von-fdm-workflows
 ---
 
 ## RDM Consulting  
