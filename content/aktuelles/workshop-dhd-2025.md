@@ -12,4 +12,4 @@ localePath: workshop-dhd-2025
 
 ## TODO
 
-TODO
+Auf der DHd 2025 in Bielefeld veranstaltet die DHd AG geisteswissenschaftliches Forschungsdatenmanagement einen Workshop zu Metadatenschema für FDM-Servicebeschreibung.
