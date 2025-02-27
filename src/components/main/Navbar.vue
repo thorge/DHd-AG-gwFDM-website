@@ -53,7 +53,7 @@
               }}</NuxtLink>
             </li>
           </ul>
-          <ul class="menu menu-horizontal max-sm:hidden">
+          <ul class="menu menu-horizontal">
             <li>
               <MainThemeToggle />
             </li>
