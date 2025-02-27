@@ -29,14 +29,13 @@ const config = useRuntimeConfig();
 
 <template>
   <NuxtLink :to="localePath(path)">
-    <article
-      class="card bg-base-100 border border-base-content/10 group m-2"
-    >
+    <article class="card bg-base-100 border border-base-content/10 group m-2">
       <figure>
-        <img
-          class="group-hover:scale-[1.02] transition-all duration-500"
-          :src="config.public.baseURL + image || ''"
+        <NuxtImg
+          :src="image || ''"
           :alt="alt"
+          width="600"
+          class="group-hover:scale-[1.02] transition-all duration-500"
         />
       </figure>
       <div class="card-body">

@@ -1,35 +1,35 @@
 <script setup lang="ts">
 interface Props {
-  title: string
-  image: string
-  alt: string
-  description: string
-  date: string
-  tags: Array<string>
+  title: string;
+  image: string;
+  alt: string;
+  description: string;
+  date: string;
+  tags: Array<string>;
 }
 
 withDefaults(defineProps<Props>(), {
-  title: 'No title found',
-  date: 'No date available',
-  image: '#',
-  alt: 'no-img',
-  description: 'No description',
+  title: "No title found",
+  date: "No date available",
+  image: "#",
+  alt: "no-img",
+  description: "No description",
   tags: () => [],
-})
+});
 
-const config = useRuntimeConfig()
-
-
+const config = useRuntimeConfig();
 </script>
 
 <template>
   <header>
-    <h1 class="text-xl text-base-content md:text-3xl lg:text-4xl m-7 font-bold text-center">
-      {{ title || '' }}
+    <h1
+      class="text-xl text-base-content md:text-3xl lg:text-4xl m-7 font-bold text-center"
+    >
+      {{ title || "" }}
     </h1>
-    <img
-      :src="config.public.baseURL + image || ''"
-      :alt="alt || ''"
+    <NuxtImg
+      :src="image || ''"
+      :alt="alt"
       width="600"
       class="m-auto rounded-2xl shadow-lg h-32 md:h-72 w-4/6 md:w-4/5 content-center object-cover"
     />
@@ -39,14 +39,20 @@ const config = useRuntimeConfig()
       {{ description }}
     </p>
     <div class="flex w-full justify-center text-xs md:text-base my-8">
-      <div class="md:flex text-base-content/70 content-center gap-8 text-xs sm:text-sm">
+      <div
+        class="md:flex text-base-content/70 content-center gap-8 text-xs sm:text-sm"
+      >
         <div class="flex items-center font-semibold text-base-content/70">
           <LogoDate />
-          <p>{{ formatDate(date) || '' }}</p>
+          <p>{{ formatDate(date) || "" }}</p>
         </div>
         <div class="flex items-center gap-2 flex-wrap my-5">
           <LogoTag />
-          <span v-for="tag in tags" :key="tag" class="badge text-base-content/70 border-base-content/50 m-1">
+          <span
+            v-for="tag in tags"
+            :key="tag"
+            class="badge text-base-content/70 border-base-content/50 m-1"
+          >
             {{ tag }}
           </span>
         </div>
