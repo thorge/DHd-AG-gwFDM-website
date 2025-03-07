@@ -13,13 +13,13 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/android-chrome-512x512.png' },
-        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-chrome-192x192.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        { rel: 'manifest', href: '/site.webmanifest' }
+        { rel: 'icon', type: 'image/x-icon', href: '/DHd-AG-gwFDM-website/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/DHd-AG-gwFDM-website/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/DHd-AG-gwFDM-website/android-chrome-512x512.png' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/DHd-AG-gwFDM-website/android-chrome-192x192.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/DHd-AG-gwFDM-website/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/DHd-AG-gwFDM-website/favicon-16x16.png' },
+        { rel: 'manifest', href: '/DHd-AG-gwFDM-website/site.webmanifest' }
       ]
     }
   },
