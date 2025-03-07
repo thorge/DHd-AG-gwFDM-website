@@ -23,6 +23,11 @@ export interface menu {
 
 const sidebarItem: menu[] = [
   {
+    title: 'breadcrumb.items.about.label',
+    icon: IconInfoCircle,
+    to: 'about',
+  },
+  {
     title: 'breadcrumb.items.news.label',
     icon: IconNews,
     to: 'news',
@@ -36,11 +41,6 @@ const sidebarItem: menu[] = [
     title: 'breadcrumb.items.publications.label',
     icon: IconBooks,
     to: 'publications',
-  },
-  {
-    title: 'breadcrumb.items.about.label',
-    icon: IconInfoCircle,
-    to: 'about',
   },
   {
     title: 'breadcrumb.items.contact.label',
