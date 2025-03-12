@@ -15,25 +15,21 @@ export const useThemeStore = defineStore("themeStore", {
     },
 
     updateThemeInDOM(newTheme) {
-      if (typeof window !== "undefined") {  // Check if we are in the browser
-        document.querySelector("html").setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-      }
+      document.querySelector("html").setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
     },
 
     initializeTheme() {
-      if (typeof window !== "undefined") { // Check if we are in the browser
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme) {
-          // Use the saved theme if it exists
-          this.theme = savedTheme;
-        } else {
-          // Fallback to system preference if no saved theme
-          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-          this.theme = prefersDark ? "dark" : "light";
-        }
-        this.updateThemeInDOM(this.theme);
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        // Use the saved theme if it exists
+        this.theme = savedTheme;
+      } else {
+        // Fallback to system preference if no saved theme
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        this.theme = prefersDark ? "dark" : "light";
       }
+      // this.updateThemeInDOM(this.theme);
     },
   },
 
