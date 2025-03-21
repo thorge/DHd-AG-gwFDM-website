@@ -12,7 +12,7 @@ export default defineContentConfig({
     news_de: defineCollection({
       type: 'page',
       source: {
-        include: ['aktuelles/**/*.md'],
+        include: 'aktuelles/**/*.md',
       },
       schema: z.object({
         date: z.date(),
@@ -22,7 +22,7 @@ export default defineContentConfig({
     news_en: defineCollection({
       type: 'page',
       source: {
-        include: ['en/news/**/*.md'],
+        include: 'en/news/**/*.md',
       },
       schema: z.object({
         date: z.date(),
