@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr: true,
   hooks: {},
 
-  srcDir: 'src/',
+  srcDir: 'app/',
 
   app: {
     baseURL: '/DHd-AG-gwFDM-website/',
