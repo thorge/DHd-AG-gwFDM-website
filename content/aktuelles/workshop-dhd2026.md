@@ -1,6 +1,6 @@
 ---
 title: DOI-Stories 
-date: 2026-02-27
+date: 2026-02-23
 description: AG-Workshop zum erfolgreichen Publizieren von Daten in den DH auf der DHd 2026
 image: /assets/images/news/workflow.jpg
 alt: Datenpublikation
