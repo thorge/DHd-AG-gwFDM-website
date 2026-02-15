@@ -10,7 +10,7 @@ description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre F
   Servicezentrum eSciences\
   Telefon: [+49 (0)651 210 4](tel:+496512104)\
   E-Mail: [marina.lemaire@uni-trier.de](mailto:marina.lemaire@uni-trier.de)\
-  ORCID: [https://orcid.org/0000-0002-3591-2355](https://orcid.org/0000-0003-4726-2481)  
+  ORCID: [https://orcid.org/0000-0003-4726-2481](https://orcid.org/0000-0003-4726-2481)  
 
 ## Stellvertretende Convenor*innen
 
