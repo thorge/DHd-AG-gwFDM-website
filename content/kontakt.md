@@ -27,6 +27,13 @@ description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre F
   Leitung Digital Humanities & Forschungsdaten\
   E-Mail: [christ@ub.uni-kiel.de](mailto:christ@ub.uni-kiel.de)
 
+- **Markus Schnöpf**\
+Berlin-Brandenburgische Akademie der Wissenschaften\
+TELOTA – DH / Forschungsdatenmanagement / Initiative Datenzentrum\
+E-Mail: [schnoepf@bbaw.de](mailto:christ@ub.uni-kiel.de)
+ORCID: https://orcid.org/0000-0003-2529-8248\
+
+
 ## Ehemalige Convenor*innen
 
 - Convenorinnen 4/2019-3/2022: Katrin Moeller & Ulrike Wuttke
