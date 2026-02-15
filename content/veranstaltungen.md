@@ -5,7 +5,15 @@ description: "Bleiben Sie informiert über unsere neuesten Veranstaltungen, Work
 ## 2025
 
 ### FORGE 2025
-Tagung FORGE25: [Anything Goes?! Forschungsdaten in den Geisteswissenschaften - kritisch betrachtet](https://forge23.uni-tuebingen.de/). Book of Abstracts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15227793.svg)](https://doi.org/10.5281/zenodo.15227793)  
+Tagung FORGE25: [Daten neu denken](https://forge23.uni-tuebingen.de/). Book of Abstracts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15227793.svg)](https://doi.org/10.5281/zenodo.15227793)  
+
+### Workshop auf der DHd-Tagung 2025: Erprobung eines Metadatenmodells zur Beschreibung von FDM-Services
+
+am 03. März 2025, 14:00 — 17:30 Uhr\
+
+Konzeption und Moderation: Marina Lemaire, Andreas Christ\
+
+Das Management von Forschungsdaten (FDM) gewinnt an Bedeutung und erfordert passende Services. Diese reichen von lokalen bis internationalen Angeboten und sind für Suchende oft schwer erreich- und bewertbar. Forscher*innen benötigen klar strukturierte, vergleich- und leicht findbare Informationen zu FDM-Services. Eine Lösung wäre eine Plattform mit einheitlichen Beschreibungen und komfortablen Suchoptionen. Dafür wird ein adäquates Metadatenmodell benötigt. Ein Vorschlag für ein solches Modell wurde von einer GO UNITE! AG erarbeitet. Der Workshop der DHd AG gwFDM soll mithilfe von Teilnehmenden aus dienstanbietenden als auch -nehmenden Perspektive dieses Modell anhand ihres Dienstekatalogs erproben, um Verbesserungsvorschläge zu sammeln und Herausforderungen zu identifizieren. Ziel ist es, das Modell weiterzuentwickeln, um eine einheitliche und umfassende Beschreibung von FDM-Services zu ermöglichen.\ Workshop-Abstract: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14943014.svg)](https://doi.org/10.5281/zenodo.14943014)
 
 
 ## 2024
