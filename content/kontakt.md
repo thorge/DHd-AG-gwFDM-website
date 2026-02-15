@@ -34,7 +34,7 @@ description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre F
   Berlin-Brandenburgische Akademie der Wissenschaften\
   TELOTA – DH / Forschungsdatenmanagement / Initiative Datenzentrum\
   E-Mail: [schnoepf@bbaw.de](mailto:christ@ub.uni-kiel.de)\
-  ORCID: [https://orcid.org/0000-0003-2529-8248](https://orcid.org/0000-0003-2529-8248)\
+  ORCID: [https://orcid.org/0000-0003-2529-8248](https://orcid.org/0000-0003-2529-8248)
 
 
 ## Ehemalige Convenor*innen
