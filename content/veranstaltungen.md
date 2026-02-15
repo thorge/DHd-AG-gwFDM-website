@@ -2,6 +2,27 @@
 title: 'Veranstaltungen'
 description: "Bleiben Sie informiert über unsere neuesten Veranstaltungen, Workshops und Vernetzungsmöglichkeiten."
 ---
+## 2025
+
+### FORGE 2025
+Tagung FORGE25: [Anything Goes?! Forschungsdaten in den Geisteswissenschaften - kritisch betrachtet](https://forge23.uni-tuebingen.de/). Book of Abstracts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15227793.svg)](https://doi.org/10.5281/zenodo.15227793)  
+
+
+## 2024
+
+### Workshop auf der DHd-Tagung 2024: Offen – frei zugänglich – für alle? Partizipative Ansätze zum barrierefreien Umgang mit Forschungsdaten
+
+am 27. Februar 2024, 09:00 — 12:30 Uhr\
+
+Konzeption und Moderation: Samuel Wunsch, Katrin Anna Lehnen, Katrin Henzel, Andreas Christ\
+
+In diesem Workshop möchte die AG Datenzentren in Kooperation mit dem Institut für Inklusive Bildung der Christian-Albrechts-Universität zu Kiel bei Forschenden und Forschungsdatenmanager*innen ein Bewusstsein für Inklusion im Datenmanagement schaffen. Im Mittelpunkt des Workshops stehen das praktische Erproben und das gemeinsame Bewerten digitaler Zugänglichkeit und Barrierefreiheit am Beispiel des Kriteriums der Verständlichkeit. Konkret auftretende Hürden bei der Bereitstellung und Verwaltung sowie Nutzung von Datenrepositorien sollen im Workshop an einem ausgewählten Beispiel festgestellt und mögliche Lösungsansätze gemeinsam erarbeitet und diskutiert werden. Ein Erfahrungsbericht zum Datenmanagement aus einem partizipativen Forschungsprojekt der Universität Kiel gibt hierfür die nötigen Impulse. Workshop-Abstract: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10698481.svg)](https://doi.org/10.5281/zenodo.10698481)
+
+
+## 2023
+
+### FORGE 2023
+Tagung FORGE23: [Anything Goes?! Forschungsdaten in den Geisteswissenschaften - kritisch betrachtet](https://forge23.uni-tuebingen.de/). Book of Abstracts: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15227793.svg)](https://doi.org/10.5281/zenodo.15227793)    
 
 ## 2022
 
@@ -30,7 +51,7 @@ Vertreter:innen von Infrastruktureinrichtungen (AG Datenzentren) möchten mit Fo
   
 ### Forge 2021
 
-Tagung FORGE21: "[Mapping the Landscape](https://forge2021.uni-koeln.de) – Geisteswissenschaftliches Forschungsdatenmanagement zwischen lokalen und globalen, generischen und spezifischen Lösungen" bewerben! [https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf](https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf)
+Tagung FORGE21: "[Mapping the Landscape](https://forge2021.uni-koeln.de) – Geisteswissenschaftliches Forschungsdatenmanagement zwischen lokalen und globalen, generischen und spezifischen Lösungen". Bewerben! [https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf](https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf)
   
 ### RaDiHum20 spricht mit der AG Datenzentren
 
