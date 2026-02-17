@@ -2,6 +2,39 @@
 title: 'Veranstaltungen'
 description: "Bleiben Sie informiert über unsere neuesten Veranstaltungen, Workshops und Vernetzungsmöglichkeiten."
 ---
+## 2025
+
+### FORGE 2025
+Tagung FORGE25: [Daten neu denken](https://forge23.uni-tuebingen.de/). Book of Abstracts: [https://doi.org/10.5281/zenodo.15227793](https://doi.org/10.5281/zenodo.15227793)  
+
+### Workshop auf der DHd-Tagung 2025: Erprobung eines Metadatenmodells zur Beschreibung von FDM-Services
+
+am 03. März 2025, 14:00 — 17:30 Uhr
+
+Konzeption und Moderation: Marina Lemaire, Andreas Christ
+
+Das Management von Forschungsdaten (FDM) gewinnt an Bedeutung und erfordert passende Services. Diese reichen von lokalen bis internationalen Angeboten und sind für Suchende oft schwer erreich- und bewertbar. Forscher*innen benötigen klar strukturierte, vergleich- und leicht findbare Informationen zu FDM-Services. Eine Lösung wäre eine Plattform mit einheitlichen Beschreibungen und komfortablen Suchoptionen. Dafür wird ein adäquates Metadatenmodell benötigt. Ein Vorschlag für ein solches Modell wurde von einer GO UNITE! AG erarbeitet. Der Workshop der DHd AG gwFDM soll mithilfe von Teilnehmenden aus dienstanbietenden als auch -nehmenden Perspektive dieses Modell anhand ihres Dienstekatalogs erproben, um Verbesserungsvorschläge zu sammeln und Herausforderungen zu identifizieren. Ziel ist es, das Modell weiterzuentwickeln, um eine einheitliche und umfassende Beschreibung von FDM-Services zu ermöglichen.    Workshop-Abstract: [https://doi.org/10.5281/zenodo.14943014](https://doi.org/10.5281/zenodo.14943014)
+
+### AG-Treffen auf der DHD-Tagung 2025
+Das AG Treffen auf der DHd 2025 findet am Mittwoch, 10. März 2025, zwischen 13:30 und 14:30 Uhr statt.
+
+## 2024
+
+### Workshop auf der DHd-Tagung 2024: Offen – frei zugänglich – für alle? Partizipative Ansätze zum barrierefreien Umgang mit Forschungsdaten
+
+am 27. Februar 2024, 09:00 — 12:30 Uhr
+
+Konzeption und Moderation: Samuel Wunsch, Katrin Anna Lehnen, Katrin Henzel, Andreas Christ
+
+In diesem Workshop möchte die AG Datenzentren in Kooperation mit dem Institut für Inklusive Bildung der Christian-Albrechts-Universität zu Kiel bei Forschenden und Forschungsdatenmanager*innen ein Bewusstsein für Inklusion im Datenmanagement schaffen. Im Mittelpunkt des Workshops stehen das praktische Erproben und das gemeinsame Bewerten digitaler Zugänglichkeit und Barrierefreiheit am Beispiel des Kriteriums der Verständlichkeit. Konkret auftretende Hürden bei der Bereitstellung und Verwaltung sowie Nutzung von Datenrepositorien sollen im Workshop an einem ausgewählten Beispiel festgestellt und mögliche Lösungsansätze gemeinsam erarbeitet und diskutiert werden. Ein Erfahrungsbericht zum Datenmanagement aus einem partizipativen Forschungsprojekt der Universität Kiel gibt hierfür die nötigen Impulse. Workshop-Abstract: [https://doi.org/10.5281/zenodo.10698481](https://doi.org/10.5281/zenodo.10698481)
+
+### AG-Treffen auf der DHD-Tagung 2024
+Das AG Treffen auf der DHd 2024 findet am Donnerstag, 10. März 2025, zwischen 13:30 und 14:30 Uhr statt.
+
+## 2023
+
+### FORGE 2023
+Tagung FORGE23: [Anything Goes?! Forschungsdaten in den Geisteswissenschaften - kritisch betrachtet](https://forge23.uni-tuebingen.de/). Book of Abstracts: [https://doi.org/10.5281/zenodo.15227793](https://doi.org/10.5281/zenodo.15227793)    
 
 ## 2022
 
@@ -30,7 +63,7 @@ Vertreter:innen von Infrastruktureinrichtungen (AG Datenzentren) möchten mit Fo
   
 ### Forge 2021
 
-Tagung FORGE21: "[Mapping the Landscape](https://forge2021.uni-koeln.de) – Geisteswissenschaftliches Forschungsdatenmanagement zwischen lokalen und globalen, generischen und spezifischen Lösungen" bewerben! [https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf](https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf)
+Tagung FORGE21: "[Mapping the Landscape](https://forge2021.uni-koeln.de) – Geisteswissenschaftliches Forschungsdatenmanagement zwischen lokalen und globalen, generischen und spezifischen Lösungen". Bewerben! [https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf](https://dhd-ag-datenzentren.github.io/documents/FORGE21_Call-for-Papers.pdf)
   
 ### RaDiHum20 spricht mit der AG Datenzentren
 
