@@ -4,7 +4,7 @@ date: 2026-02-23
 description: AG-Workshop zum erfolgreichen Publizieren von Daten in den DH auf der DHd 2026
 image: /assets/images/news/workflow.jpg
 alt: Datenpublikation
-ogImage: /assets/images/news/workflow.jpg
+ogImage: /assets/images/news/DOI_logo.png
 tags: ['Workshop', 'Datenpublikation']
 published: true
 localePath: workshop-dhd-2026
