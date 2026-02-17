@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 
   site: {
     name: 'DHd-AG gwFDM',
-    url: "https://thorge.github.io",
+    url: "https://thorge.github.io/DHd-AG-gwFDM-website/",
     breadcrumb: {
       home: {
         label: "Home"
@@ -82,7 +82,7 @@ export default defineNuxtConfig({
   robots: { robotsTxt: false },
 
   i18n: {
-    baseUrl: 'https://thorge.github.io',
+    baseUrl: 'https://thorge.github.io/',
     customRoutes: 'config',
     pages: {
       'news/index': {
@@ -157,12 +157,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
       failOnError: false
     }
-  },
-
-  runtimeConfig: {
-    public: {
-      sitePath: '/DHd-AG-gwFDM-website',
-    },
   },
 
   devServerHandlers: [],
