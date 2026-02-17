@@ -79,4 +79,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 This project is built with:
 
-- [**Nuxt 3**](https://nuxt.com/): A modern web framework for building powerful and performant web applications. Learn more about Nuxt 3 in the [Nuxt 3 documentation].
+- [**Nuxt 4**](https://nuxt.com/): A modern web framework for building powerful and performant web applications.
