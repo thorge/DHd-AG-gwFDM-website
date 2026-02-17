@@ -8,6 +8,8 @@ const { data: page } = await useAsyncData(`page-${route.path}`, () => {
   return queryCollection("pages").path(route.path).first();
 });
 
+provide('page', page);
+
 if (!page.value) {
   throw createError({
     statusCode: 404,

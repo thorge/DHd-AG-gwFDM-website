@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data: page } = await useAsyncData(`page-${route.path}`, () => {
-  return queryCollection("pages").path(route.path).first();
-});
+const page = inject<any>('page');
 
 const links = page.value?.body?.toc?.links || []
 </script>
@@ -18,7 +16,7 @@ const links = page.value?.body?.toc?.links || []
         :to="`#${link.id}`"
         class="block text-xs mb-3 hover:underline"
       >
-        {{ link.text }}
+        {{ link.text ? link.text : 'No text' }}
       </NuxtLink>
     </div>
   </div>
