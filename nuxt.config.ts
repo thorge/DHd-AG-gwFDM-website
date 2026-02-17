@@ -5,6 +5,14 @@ export default defineNuxtConfig({
   ssr: true,
   hooks: {},
 
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'append' // or 'remove'
+      }
+    }
+  },
+
   srcDir: 'app/',
 
   app: {
@@ -28,6 +36,7 @@ export default defineNuxtConfig({
 
   site: {
     name: 'DHd-AG gwFDM',
+    trailingSlash: true,
     url: "https://thorge.github.io/DHd-AG-gwFDM-website/",
     breadcrumb: {
       home: {
@@ -84,6 +93,7 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl: 'https://thorge.github.io/',
     customRoutes: 'config',
+    //trailingSlash: true,
     pages: {
       'news/index': {
         de: '/aktuelles',
@@ -155,8 +165,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      failOnError: false
-    }
+      failOnError: false,
+    },
   },
 
   devServerHandlers: [],
