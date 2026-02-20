@@ -1,7 +1,7 @@
 ---
-title: Workshop zu Metadaten auf der DHd 2025
+title: Erprobung eines Metadatenmodells zur Beschreibung von FDM-Services
 date: 2025-03-03
-description: Auf der DHd 2025 in Bielefeld veranstaltet die DHd AG gwFDM einen Workshop zu Metadatenschema für FDM-Servicebeschreibung.
+description: Auf der DHd 2025 veranstaltet die DHd AG gwFDM einen Workshop zu Metadatenschema für FDM-Servicebeschreibung.
 image: /assets/images/news/metadaten-schema.png
 alt: Workshop zu Metadaten auf der DHd 2025
 ogImage: /assets/images/news/metadaten-schema.png
