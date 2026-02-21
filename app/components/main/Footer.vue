@@ -32,7 +32,7 @@ const localePath = useLocalePath();
       >
         {{ $t("serviceCatalogue") }}
       </NuxtLink>
-      <NuxtLink :to="localePath('/impressum')" class="link link-hover">
+      <NuxtLink :to="https://digitalhumanities.de/impressum/" class="link link-hover">
         {{ $t("breadcrumb.items.imprint.label") }}
       </NuxtLink>
     </nav>
