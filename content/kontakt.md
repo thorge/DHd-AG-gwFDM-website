@@ -1,9 +1,9 @@
 ---
 title: 'Kontakt'
-description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre Fragen, Anregungen und Kooperationen gerne zur Verfügung."
+description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir freuen uns auf Fragen, Anregungen und Kooperationen."
 ---
 
-## Convenorin
+## Convenor:innen
 
 - **Marina Lemaire**\
   Universität Trier\
@@ -11,8 +11,6 @@ description: "Nehmen Sie Kontakt mit der AG gwFDM auf – wir stehen für Ihre F
   Telefon: [+49 (0)651 210 4](tel:+496512104)\
   E-Mail: [marina.lemaire@uni-trier.de](mailto:marina.lemaire@uni-trier.de)\
   ORCID: [https://orcid.org/0000-0003-4726-2481](https://orcid.org/0000-0003-4726-2481)  
-
-## Stellvertretende Convenor:innen
 
 - **Sibylle Söring**\
   Freie Universität Berlin\
