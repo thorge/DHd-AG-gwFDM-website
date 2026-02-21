@@ -1,5 +1,5 @@
 ---
 title: 'Willkommen bei der AG gwFDM'
-description: "Entdecken Sie die AG für geisteswissenschaftliches Forschungsdatenmanagement (AG gwFDM) im Verband DHd."
+description: "Entdecken Sie die AG für geisteswissenschaftliches Forschungsdatenmanagement im Verband DHd."
 ---
 In der DHd-Arbeitsgruppe geisteswissenschaftliches Forschungsdatenmanagement (gwFDM) sind Personen, Einrichtungen und Infrastrukturen aller geisteswissenschaftlichen Disziplinen im deutschsprachigen Raum vertreten, die sich mit der Aufbereitung und Bereitstellung von Forschungsdaten gemäß der FAIR-Prinzipien beschäftigen und die konkrete Dienste und Dienstleistungen zum Forschungsdatenmanagement (FDM) mitgestalten. Die Arbeitsgruppe gwFDM führt die laufenden Aktivitäten an den verschiedenen Standorten zusammen, fördert den Austausch über Begriffe, Selbstverständnisse, Problemlagen und Aufgaben, bearbeitet gemeinsam  offene Forschungsfragen im FDM-Themenfeld und identifiziert blinde Flecken in der Versorgungslandschaft. Neben vielfältigen Aktivitäten organisiert die AG hierzu die zweijährige Ausrichtung der Tagung FORGE – Forschungsdaten in den Geisteswissenschaften.
