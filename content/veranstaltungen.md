@@ -1,6 +1,6 @@
 ---
 title: 'Veranstaltungen'
-description: "Bleiben Sie informiert über unsere neuesten Veranstaltungen, Workshops und Vernetzungsmöglichkeiten."
+description: "Hier finden Sie eine Übersicht unserer Veranstaltungen und Workshops."
 ---
 ## 2025
 
