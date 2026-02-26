@@ -5,7 +5,7 @@ description: Das nächste Treffen der AG geisteswissenschaftliches Forschungsdat
 image: /assets/images/news/logo_dhd2026_wien.png
 alt: Sammlung von FDM-Beratungsworkflows
 ogImage: /assets/images/news/logo_dhd2026_wien.png
-tags: ['AG-Treffen', 'DHd-Jahrestagung']
+tags: ['AG-Treffen']
 published: true
 localePath: collection-of-rdm-workflows
 ---
