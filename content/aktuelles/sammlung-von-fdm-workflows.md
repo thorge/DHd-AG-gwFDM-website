@@ -2,9 +2,9 @@
 title: AG-Treffen auf der DHd 2026
 date: 2026-02-26
 description: Das nächste Treffen der AG geisteswissenschaftliches Forschungsdatenmanagement findet im Rahmen der DHd2026 an der Universität Wien statt.
-image: /assets/images/news/workflow.jpg
+image: /assets/images/news/logo_dhd2026_wien.png
 alt: Sammlung von FDM-Beratungsworkflows
-ogImage: /assets/images/news/workflow.jpg
+ogImage: /assets/images/news/logo_dhd2026_wien.png
 tags: ['AG-Treffen', 'DHd-Jahrestagung']
 published: true
 localePath: collection-of-rdm-workflows
