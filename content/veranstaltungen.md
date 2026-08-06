@@ -4,7 +4,7 @@ description: "Hier finden Sie eine Übersicht unserer Veranstaltungen und Worksh
 ---
 ## 2026
 
-### AG-Treffen auf der DHD-Tagung 2026
+### AG-Treffen auf der DHd-Tagung 2026
 Das AG Treffen auf der DHd 2026 in Wien findet am Donnerstag, 26. Februar 2026, zwischen 13:00 und 14:00 Uhr statt.
 
 ### Workshop auf der DHd-Tagung 2026: DOI-Stories: Erfolgreich Daten Publizieren in den DH
@@ -28,7 +28,7 @@ Konzeption und Moderation: Marina Lemaire, Andreas Christ
 
 Das Management von Forschungsdaten (FDM) gewinnt an Bedeutung und erfordert passende Services. Diese reichen von lokalen bis internationalen Angeboten und sind für Suchende oft schwer erreich- und bewertbar. Forscher*innen benötigen klar strukturierte, vergleich- und leicht findbare Informationen zu FDM-Services. Eine Lösung wäre eine Plattform mit einheitlichen Beschreibungen und komfortablen Suchoptionen. Dafür wird ein adäquates Metadatenmodell benötigt. Ein Vorschlag für ein solches Modell wurde von einer GO UNITE! AG erarbeitet. Der Workshop der DHd AG gwFDM soll mithilfe von Teilnehmenden aus dienstanbietenden als auch -nehmenden Perspektive dieses Modell anhand ihres Dienstekatalogs erproben, um Verbesserungsvorschläge zu sammeln und Herausforderungen zu identifizieren. Ziel ist es, das Modell weiterzuentwickeln, um eine einheitliche und umfassende Beschreibung von FDM-Services zu ermöglichen.    Workshop-Abstract: [https://doi.org/10.5281/zenodo.14943014](https://doi.org/10.5281/zenodo.14943014)
 
-### AG-Treffen auf der DHD-Tagung 2025
+### AG-Treffen auf der DHd-Tagung 2025
 Das AG Treffen auf der DHd 2025 findet am Mittwoch, 10. März 2025, zwischen 13:30 und 14:30 Uhr statt.
 
 ## 2024
