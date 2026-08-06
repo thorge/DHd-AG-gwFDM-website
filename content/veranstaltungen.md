@@ -2,6 +2,19 @@
 title: 'Veranstaltungen'
 description: "Hier finden Sie eine Übersicht unserer Veranstaltungen und Workshops."
 ---
+## 2026
+
+### AG-Treffen auf der DHD-Tagung 2026
+Das AG Treffen auf der DHd 2026 in Wien findet am Donnerstag, 26. Februar 2026, zwischen 13:00 und 14:00 Uhr statt.
+
+### Workshop auf der DHd-Tagung 2026: DOI-Stories: Erfolgreich Daten Publizieren in den DH
+
+am 23. Februar 2026, 14:00 — 18:00 Uhr
+
+Konzeption und Moderation: Fabian Cremer, Patrick Helling, Jan Horstmann, Melanie Seltmann, Timo Steyer, Sibylle Söring
+
+Der Workshop "DOI-Stories" widmet sich den Publikationspraktiken von Forschungsdaten in den Digital Humanities. Forschungsdaten bilden zunehmend ein zentrales Element der digitalen Geisteswissenschaften. Der Workshop analysiert anhand konkreter und von den Teilnehmenden eingebrachten Fallbeispiele ("DOI-Stories") die vielfältigen Publikationspraktiken sowie die damit verbundenen Hürden, Standards und Erfahrungen. Leitfragen untersuchen u.a., welche Daten veröffentlicht werden, über welche Kanäle und Formate, mit welcher Dokumentation, Unterstützung und Motivation. Ziel ist es, Erfolgsfaktoren zu identifizieren, Orientierung für die Community zu bieten und den Austausch zum Thema Datenpublikationspraxis zu fördern. Die "DOI-Stories" dokumentieren dabei nicht nur technische, sondern auch ideelle Aspekte der Veröffentlichung und werden in einer Best-Practice-Sammlung aufbereitet. Der Workshop richtet sich an alle Interessierten, unabhängig von ihrer bisherigen Erfahrung mit Datenpublikationen. Workshop-Abstract: [https://doi.org/10.5281/zenodo.14943014](https://doi.org/10.5281/zenodo.18702767)
+
 ## 2025
 
 ### FORGE 2025
